@@ -89,7 +89,43 @@ class Amadeus_Flight_Search_Settings {
      */
     public static function get_setting( $key, $default = null ) {
         $settings = self::get_settings();
-        return isset( $settings[ $key ] ) ? $settings[ $key ] : $default;
+
+        // Check if setting exists in WordPress options
+        if ( isset( $settings[ $key ] ) ) {
+            return $settings[ $key ];
+        }
+
+        // Fallback to environment variables for development
+        $env_key = strtoupper( str_replace( '-', '_', $key ) );
+        if ( defined( 'AMADEUS_API_KEY' ) && $key === 'amadeus_api_key' ) {
+            return AMADEUS_API_KEY;
+        }
+        if ( defined( 'AMADEUS_API_SECRET' ) && $key === 'amadeus_api_secret' ) {
+            return AMADEUS_API_SECRET;
+        }
+        if ( defined( 'AMADEUS_ENVIRONMENT' ) && $key === 'amadeus_api_environment' ) {
+            return AMADEUS_ENVIRONMENT;
+        }
+        if ( defined( 'CURRENCY_CODE' ) && $key === 'currency_code' ) {
+            return CURRENCY_CODE;
+        }
+        if ( defined( 'DEBUG_MODE' ) && $key === 'debug_mode' ) {
+            return DEBUG_MODE === 'true' || DEBUG_MODE === true;
+        }
+        if ( defined( 'ENABLE_HOTEL_SEARCH' ) && $key === 'enable_hotel_search' ) {
+            return ENABLE_HOTEL_SEARCH === 'true' || ENABLE_HOTEL_SEARCH === true;
+        }
+
+        // Check environment variables using getenv
+        $env_value = getenv( $env_key );
+        if ( false !== $env_value ) {
+            // Convert string booleans
+            if ( $env_value === 'true' ) return true;
+            if ( $env_value === 'false' ) return false;
+            return $env_value;
+        }
+
+        return $default;
     }
 
     /**

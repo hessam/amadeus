@@ -28,6 +28,24 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /**
+ * Load environment variables from .env file for development
+ */
+if ( file_exists( AFS_PLUGIN_DIR . '.env' ) ) {
+    $env_lines = file( AFS_PLUGIN_DIR . '.env', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES );
+    foreach ( $env_lines as $line ) {
+        if ( strpos( trim( $line ), '#' ) === 0 ) {
+            continue; // Skip comments
+        }
+        list( $name, $value ) = explode( '=', $line, 2 );
+        $name = trim( $name );
+        $value = trim( $value );
+        if ( ! defined( $name ) ) {
+            define( $name, $value );
+        }
+    }
+}
+
+/**
  * Define Constants
  */
 define( 'AFS_VERSION', '1.0.0' );
