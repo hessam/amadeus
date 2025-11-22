@@ -28,6 +28,16 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /**
+ * Define Constants
+ */
+define( 'AFS_VERSION', '3.2.4' );
+define( 'AFS_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+define( 'AFS_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+define( 'AFS_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
+define( 'AFS_TEXT_DOMAIN', 'amadeus-flight-search' );
+define( 'AFS_SETTINGS_SLUG', 'amadeus_api_settings' ); // Used for wp_options
+
+/**
  * Load environment variables from .env file for development
  */
 if ( file_exists( AFS_PLUGIN_DIR . '.env' ) ) {
@@ -44,15 +54,6 @@ if ( file_exists( AFS_PLUGIN_DIR . '.env' ) ) {
         }
     }
 }
-
-/**
- * Define Constants
- */
-define( 'AFS_VERSION', '3.2.4' );
-define( 'AFS_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-define( 'AFS_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-define( 'AFS_TEXT_DOMAIN', 'amadeus-flight-search' );
-define( 'AFS_SETTINGS_SLUG', 'amadeus_api_settings' ); // Used for wp_options
 
 /**
  * The code that runs during plugin activation.
