@@ -142,6 +142,7 @@ class Amadeus_Flight_Search_Settings {
 
             // Advanced Settings
             'airline_logo_base_url'     => 'https://dummyticket247.com/airline-logo?logo={{iataCode}}.png&v=2025',
+            'enable_hotel_search'       => false, // Feature flag for hotel search functionality
         );
     }
 

@@ -618,6 +618,63 @@ form#ahs-hotel-search-form .afs-form-actions {
     margin-bottom: 0;
 }
 
+/* --- Zero State Styles --- */
+.afs-zero-state {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--afs-background-color);
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.afs-zero-state__icon {
+    color: var(--afs-light-text-color);
+    margin-bottom: 1rem;
+}
+
+.afs-zero-state__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--afs-text-color);
+    margin-bottom: 0.5rem;
+}
+
+.afs-zero-state__message {
+    font-size: 1rem;
+    color: var(--afs-light-text-color);
+    margin-bottom: 1.5rem;
+}
+
+.afs-zero-state__suggestions {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.afs-zero-state__suggestions p {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.afs-zero-state__suggestions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.afs-zero-state__suggestions li {
+    padding: 0.25rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.afs-zero-state__suggestions li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--afs-primary-color);
+    font-weight: bold;
+}
+
 /* --- Responsive Adjustments --- */
 @media (max-width: 900px) {
     body .afs-wrapper {

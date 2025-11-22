@@ -81,20 +81,22 @@ class Amadeus_Flight_Search_Main {
         $this->loader->add_action( 'wp_ajax_afs_clear_flight_transient', $ajax_handler, 'clear_flight_transient' );
         $this->loader->add_action( 'wp_ajax_nopriv_afs_clear_flight_transient', $ajax_handler, 'clear_flight_transient' );
 
-        // --- START: ADD HOTEL AJAX HOOKS (No conditional check here) ---
-        $hotel_ajax_handler = new Amadeus_Hotel_AJAX();
-        
-        // Hotel location autocomplete
-        $this->loader->add_action( 'wp_ajax_ahs_search_hotel_locations', $hotel_ajax_handler, 'search_hotel_locations' );
-        $this->loader->add_action( 'wp_ajax_nopriv_ahs_search_hotel_locations', $hotel_ajax_handler, 'search_hotel_locations' );
-        
-        // Hotel offers search
-        $this->loader->add_action( 'wp_ajax_ahs_search_hotels', $hotel_ajax_handler, 'search_hotels' );
-        $this->loader->add_action( 'wp_ajax_nopriv_ahs_search_hotels', $hotel_ajax_handler, 'search_hotels' );
-        
-        // Select Hotel (for transient and GF pre-fill)
-        $this->loader->add_action( 'wp_ajax_ahs_select_hotel', $hotel_ajax_handler, 'select_hotel' );
-        $this->loader->add_action( 'wp_ajax_nopriv_ahs_select_hotel', $hotel_ajax_handler, 'select_hotel' );
+        // --- START: ADD HOTEL AJAX HOOKS (Feature Flagged) ---
+        if (Amadeus_Flight_Search_Settings::get_setting('enable_hotel_search', false)) {
+            $hotel_ajax_handler = new Amadeus_Hotel_AJAX();
+            
+            // Hotel location autocomplete
+            $this->loader->add_action( 'wp_ajax_ahs_search_hotel_locations', $hotel_ajax_handler, 'search_hotel_locations' );
+            $this->loader->add_action( 'wp_ajax_nopriv_ahs_search_hotel_locations', $hotel_ajax_handler, 'search_hotel_locations' );
+            
+            // Hotel offers search
+            $this->loader->add_action( 'wp_ajax_ahs_search_hotels', $hotel_ajax_handler, 'search_hotels' );
+            $this->loader->add_action( 'wp_ajax_nopriv_ahs_search_hotels', $hotel_ajax_handler, 'search_hotels' );
+            
+            // Select Hotel (for transient and GF pre-fill)
+            $this->loader->add_action( 'wp_ajax_ahs_select_hotel', $hotel_ajax_handler, 'select_hotel' );
+            $this->loader->add_action( 'wp_ajax_nopriv_ahs_select_hotel', $hotel_ajax_handler, 'select_hotel' );
+        }
         // --- END: ADD HOTEL AJAX HOOKS ---
 
 
@@ -157,6 +159,11 @@ class Amadeus_Flight_Search_Main {
      * This ensures the pre-fill logic runs on the correct page.
      */
     public function maybe_enqueue_hotel_booking_scripts() {
+        // Feature flag check
+        if (!Amadeus_Flight_Search_Settings::get_setting('enable_hotel_search', false)) {
+            return;
+        }
+        
         // Get the configured hotel booking page URL/ID
         $hotel_booking_page_setting = Amadeus_Flight_Search_Settings::get_setting('hotel_booking_page_url');
         if ( empty( $hotel_booking_page_setting ) ) {

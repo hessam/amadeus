@@ -212,6 +212,18 @@ class Amadeus_API {
                 }
             }
             afs_debug_log( 'API Error: ' . $error_message . ' Response: ' . $response_body, __CLASS__ . '::' . __FUNCTION__ );
+            
+            // Structured logging for error analysis
+            afs_debug_log( 
+                sprintf(
+                    'Structured API Error - Endpoint: %s, Response Code: %d, Error Details: %s',
+                    $endpoint,
+                    $response_code,
+                    wp_json_encode( isset( $data['errors'] ) ? $data['errors'] : $data )
+                ),
+                __CLASS__ . '::' . __FUNCTION__
+            );
+            
             return new WP_Error( 'api_request_failed', $error_message, array( 'status' => $response_code, 'body' => $data ) );
         }
     }

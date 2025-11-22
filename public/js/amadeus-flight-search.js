@@ -41,12 +41,32 @@
     }
 
     /**
-     * Clears an error message from a specified container.
-     * @param {jQuery} $container The jQuery object of the container.
+     * Displays a zero state UI when no results are found.
+     * @param {string} message The message to display.
      */
-    function clearErrorMessage($container) {
-        const $errorTarget = $container && $container.length ? $container : $('#afs-results-error-message');
-        $errorTarget.empty().hide();
+    function showZeroState(message) {
+        const $container = $('#afs-flight-results-container').empty().show();
+        const zeroStateHtml = `
+            <div class="afs-zero-state">
+                <div class="afs-zero-state__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                </div>
+                <h3 class="afs-zero-state__title">${amadeus_vars.text.zero_state_title || 'No Flights Found'}</h3>
+                <p class="afs-zero-state__message">${message}</p>
+                <div class="afs-zero-state__suggestions">
+                    <p>${amadeus_vars.text.zero_state_suggestions || 'Try adjusting your search criteria:'}</p>
+                    <ul>
+                        <li>${amadeus_vars.text.zero_state_suggestion_1 || 'Check your departure and return dates'}</li>
+                        <li>${amadeus_vars.text.zero_state_suggestion_2 || 'Try different airports or nearby cities'}</li>
+                        <li>${amadeus_vars.text.zero_state_suggestion_3 || 'Consider flexible dates or different travel classes'}</li>
+                    </ul>
+                </div>
+            </div>
+        `;
+        $container.html(zeroStateHtml);
+        clearErrorMessage();
     }
 
     /**
@@ -289,6 +309,10 @@
                     if (response.success && response.data && response.data.data && response.data.data.length > 0) {
                         displayFlightResults(response.data.data, response.data.dictionaries || {});
                         $('#afs-flight-results-container').show();
+                    } else if (response.success && response.data && response.data.data && response.data.data.length === 0) {
+                        // Zero state: No flights found
+                        const message = response.data.message || amadeus_vars.text.zero_state_message || 'We couldn\'t find any flights matching your search criteria.';
+                        showZeroState(message);
                     } else {
                         // Handle API errors with specific messages
                         let errorMessage = amadeus_vars.text.error_no_flights_found || 'No flights found.';
