@@ -1,0 +1,43 @@
+Core PHP Logic (9 files)
+amadeus-flight-search-pro.php (Main Plugin File):
+This is the entry point of your plugin. It contains the header with all the plugin's metadata (Name, Version, Author, etc.). It defines essential constants, includes the core dependency files, and registers the activation and deactivation hooks.
+
+class-amadeus-flight-search-main.php:
+This is the central orchestrator of the plugin. It loads all other classes, initiates the Amadeus_Flight_Search_Loader, and defines all hooks (actions, filters, AJAX endpoints) and shortcodes. It also handles enqueuing all the public-facing CSS and JavaScript files.
+
+class-amadeus-flight-search-loader.php:
+This class acts as a central registry for all WordPress hooks (actions and filters) and shortcodes. The main class adds hooks to the loader, and the loader's run() method officially registers them with WordPress.
+
+class-settings.php:
+This class manages all plugin settings stored in the WordPress options table. It provides a clean and centralized way for other parts of the plugin to get, set, and define default options using a Singleton pattern.
+
+helpers.php:
+This file contains standalone helper functions that can be used globally across the plugin. Its functions include a custom debug logger (afs_debug_log), a function to get a unique user ID (afs_get_user_identifier), and a utility to resolve page URLs from settings.
+
+class-amadeus-flight-search-admin.php:
+This handles everything related to the WordPress admin area. It creates the plugin's admin menu page, registers the settings sections and fields for the different tabs (General, Gravity Forms, Advanced), and handles the rendering and sanitization of those settings.
+
+class-amadeus-api.php:
+This is the dedicated class for all communication with the Amadeus API. It handles obtaining the OAuth2 access token and caching it, and provides methods for making requests to API endpoints like searching for locations (/v1/reference-data/locations) and searching for flight offers (/v2/shopping/flight-offers).
+
+class-ajax.php:
+This class manages all AJAX (Asynchronous JavaScript and XML) requests. It contains the server-side logic for handling requests from the front-end JavaScript, such as searching for airport locations and performing the main flight search. It prepares data for the API class and sends back formatted JSON responses.
+
+class-amadeus-flight-search-i18n.php:
+This class handles the internationalization (i18n) of the plugin. Its primary function is to load the plugin's text domain so that all the strings wrapped in WordPress translation functions (like __() and _e()) can be translated into different languages.
+
+Front-End Assets (5 files)
+search-form.php (Template):
+This is a front-end PHP template file that renders the HTML structure for the flight search form. It's displayed on the front end when the [amadeus_flight_search] shortcode is used.
+
+results.php (Template):
+This template serves as an empty container or placeholder. When a user performs a search, the JavaScript file dynamically injects the flight results HTML into this container.
+
+booking-form.php (Template):
+This template is used on the booking page via the [amadeus_flight_booking] shortcode. It acts as a placeholder to display a summary of the user's selected flight and is designed to work alongside a Gravity Form that is added to the page separately.
+
+amadeus-flight-search.js (JavaScript):
+This is the engine of the front-end experience. It handles all user interactions: initializing datepickers and autocomplete fields, managing the passenger selection panel, submitting the search form via AJAX, dynamically rendering the results received from the server, and pre-filling the Gravity Form on the booking page. It uses the provided autocomplete JSON structure to power the location search locally.
+
+amadeus-flight-search.css (CSS):
+This file, along with the additional override styles you provided, defines the visual appearance of the entire plugin on the front end. It styles the search form, the results cards (including the Skyscanner-like layout), the loading indicators, and all other interactive elements to ensure a consistent and responsive design.

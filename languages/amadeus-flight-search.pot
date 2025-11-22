@@ -1,0 +1,620 @@
+# Copyright (C) 2025 Hessam
+# This file is distributed under the same license as the Amadeus Flight Search plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Amadeus Flight Search Pro 3.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/amadeus-flight-search\n"
+"POT-Creation-Date: 2025-07-02 10:30:00+03:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Domain: amadeus-flight-search\n"
+"X-Generator: Loco https://localise.biz/\n"
+
+#. Name of the plugin
+msgid "Amadeus Flight Search Pro"
+msgstr ""
+
+#. Description of the plugin
+msgid "Integrates Amadeus Self-Service Flight API for flight search and booking via Gravity Forms."
+msgstr ""
+
+#. Author of the plugin
+msgid "Hessam"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://yourwebsite.com/amadeus-flight-search"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://yourwebsite.com"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:40
+msgid "Amadeus Flight Search Settings"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:41
+#: admin/class-amadeus-flight-search-admin.php:102
+msgid "Flight Search"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:57
+msgid "General"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:58
+msgid "Gravity Forms"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:59
+msgid "Advanced"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:60
+msgid "Hotels"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:75
+msgid "Save Settings"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:87
+msgid "Amadeus API Credentials"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:88
+msgid "API Key"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:89
+msgid "API Secret"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:90
+msgid "API Environment"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:92
+msgid "Page Configuration"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:93
+msgid "Booking Page URL"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:94
+msgid "Currency Code"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:95
+msgid "Fixed Dummy Ticket Price"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:98
+msgid "Form Configuration"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:99
+msgid "Gravity Form ID for Booking"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:101
+msgid "Gravity Form Field Mapping"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:102
+msgid "Flight Number Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:103
+msgid "Departure Airport Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:104
+msgid "Departure Time Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:105
+msgid "Return Date Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:106
+msgid "Arrival Airport Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:107
+msgid "Arrival Time Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:108
+msgid "Origin Airport Name Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:109
+msgid "Destination Airport Name Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:110
+msgid "Return Origin Airport Name Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:111
+msgid "Return Destination Airport Name Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:114
+msgid "Advanced Settings"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:115
+msgid "Airline Logo Service URL"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:116
+msgid "Enable Debug Mode"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:119
+msgid "Hotel Search Settings"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:121
+msgid "Enable Hotel Search"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:123
+msgid "Hotel Booking Page URL"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:125
+msgid "Hotel Fixed Dummy Price"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:128
+msgid "Hotel Gravity Form Field Mapping"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:130
+msgid "Gravity Form ID for Hotels"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:132
+msgid "Hotel Name Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:133
+msgid "City Name Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:134
+msgid "Check-in Date Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:135
+msgid "Check-out Date Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:136
+msgid "Guests/Adults Field ID"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:140
+msgid "Enter your Amadeus API credentials below."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:141
+msgid "Configure the core pages and currency used by the plugin."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:142
+msgid "Specify which Gravity Form to use for the booking process."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:143
+msgid "Map flight data to your Gravity Form field IDs. Find the ID next to the field label when editing your form."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:144
+msgid "Configure advanced settings for the plugin."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:145
+msgid "Configure settings for the hotel search feature."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:149
+msgid "Map hotel data to your Gravity Form field IDs for hotel bookings."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:156
+msgid "Enter your Amadeus API Key."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:157
+msgid "Enter your Amadeus API Secret."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:158
+msgid "Test (Sandbox)"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:158
+msgid "Production (Live)"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:158
+msgid "Select the API environment."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:159
+msgid "Enter the full URL or Page ID of the page containing the `[amadeus_flight_booking]` shortcode."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:160
+msgid "Default currency code for flight searches (e.g., USD, EUR)."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:161
+msgid "Enter a fixed price for all tickets (e.g., 25.00). Leave blank to use the price from the API."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:162
+msgid "Enter the numeric ID of the Gravity Form used for bookings."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:164
+msgid "Enter the base URL for the airline logo service. Use `{{iataCode}}` as a placeholder for the airline's IATA code."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:165
+msgid "Enable detailed logging to the PHP error log (requires WP_DEBUG and WP_DEBUG_LOG to be true)."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:167
+msgid "Enable the `[amadeus_hotel_search]` shortcode and feature."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:169
+msgid "Enter the full URL or Page ID of the page containing your hotel booking Gravity Form."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:171
+msgid "Enter a fixed price per night for all hotels (e.g., 25.00). Leave blank to use the price from the API."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:173
+msgid "Enter the numeric ID of the Gravity Form used for hotel bookings."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:218
+msgid "Invalid currency code. Please use a 3-letter uppercase format (e.g., USD)."
+msgstr ""
+
+#: amadeus-flight-search.php:86
+msgid "Amadeus Flight Search plugin critical file missing: class-settings.php"
+msgstr ""
+
+#: amadeus-flight-search.php:95
+msgid "Amadeus Flight Search plugin critical file missing: helpers.php"
+msgstr ""
+
+#: amadeus-flight-search.php:109
+msgid "Amadeus Flight Search plugin critical file missing: class-amadeus-flight-search-main.php"
+msgstr ""
+
+#: public/partials/booking-form.php:31
+msgid "Your Selected Flight Summary"
+msgstr ""
+
+#: public/partials/booking-form.php:33
+msgid "Loading flight details..."
+msgstr ""
+
+#: public/partials/hotel-search-form.php:20
+#: public/partials/hotel-search-form.php:57
+msgid "Search Hotels"
+msgstr ""
+
+#: public/partials/hotel-search-form.php:25
+msgid "Destination City"
+msgstr ""
+
+#: public/partials/hotel-search-form.php:26
+msgid "e.g. Milan"
+msgstr ""
+
+#: public/partials/hotel-search-form.php:31
+msgid "Check-in"
+msgstr ""
+
+#: public/partials/hotel-search-form.php:32
+#: public/partials/hotel-search-form.php:37
+#: public/partials/search-form.php:51
+#: public/partials/search-form.php:55
+msgid "YYYY-MM-DD"
+msgstr ""
+
+#: public/partials/hotel-search-form.php:36
+msgid "Check-out"
+msgstr ""
+
+#: public/partials/hotel-search-form.php:41
+msgid "Guests"
+msgstr ""
+
+#: public/partials/hotel-search-form.php:48
+msgid "Search"
+msgstr ""
+
+#: public/partials/hotel-search-form.php:65
+msgid "Searching for the best hotels..."
+msgstr ""
+
+#: public/partials/results.php:32
+msgid "Loading more results..."
+msgstr ""
+
+#: public/partials/search-form.php:20
+#: public/partials/search-form.php:118
+msgid "Search Flights"
+msgstr ""
+
+#: public/partials/search-form.php:26
+msgid "One Way"
+msgstr ""
+
+#: public/partials/search-form.php:30
+msgid "Round Trip"
+msgstr ""
+
+#: public/partials/search-form.php:36
+msgid "From"
+msgstr ""
+
+#: public/partials/search-form.php:37
+msgid "Origin airport or city"
+msgstr ""
+
+#: public/partials/search-form.php:42
+msgid "To"
+msgstr ""
+
+#: public/partials/search-form.php:43
+msgid "Destination airport or city"
+msgstr ""
+
+#: public/partials/search-form.php:50
+msgid "Depart"
+msgstr ""
+
+#: public/partials/search-form.php:54
+msgid "Return"
+msgstr ""
+
+#: public/partials/search-form.php:61
+msgid "Passengers & Class"
+msgstr ""
+
+#: public/partials/search-form.php:62
+msgid "1 Adult, Economy"
+msgstr ""
+
+#: public/partials/search-form.php:71
+msgid "Select Passengers"
+msgstr ""
+
+#: public/partials/search-form.php:73
+msgid "Adults"
+msgstr ""
+
+#: public/partials/search-form.php:75
+msgid "Decrease adults"
+msgstr ""
+
+#: public/partials/search-form.php:77
+msgid "Increase adults"
+msgstr ""
+
+#: public/partials/search-form.php:81
+msgid "Children"
+msgstr ""
+
+#: public/partials/search-form.php:83
+msgid "Decrease children"
+msgstr ""
+
+#: public/partials/search-form.php:85
+msgid "Increase children"
+msgstr ""
+
+#: public/partials/search-form.php:89
+msgid "Infants"
+msgstr ""
+
+#: public/partials/search-form.php:91
+msgid "Decrease infants"
+msgstr ""
+
+#: public/partials/search-form.php:92
+msgid "Increase infants"
+msgstr ""
+
+#: public/partials/search-form.php:96
+msgid "Select Travel Class"
+msgstr ""
+
+#: public/partials/search-form.php:99
+msgid "Economy"
+msgstr ""
+
+#: public/partials/search-form.php:100
+msgid "Premium Economy"
+msgstr ""
+
+#: public/partials/search-form.php:101
+msgid "Business"
+msgstr ""
+
+#: public/partials/search-form.php:102
+msgid "First Class"
+msgstr ""
+
+#: public/partials/search-form.php:105
+msgid "Done"
+msgstr ""
+
+#: public/partials/search-form.php:111
+msgid "Search non-stop flights only"
+msgstr ""
+
+#: public/partials/search-form.php:127
+msgid "Searching for the best flights..."
+msgstr ""
+
+#: includes/class-amadeus-api.php:86
+msgid "Amadeus API Key or Secret is not configured."
+msgstr ""
+
+#: includes/class-amadeus-api.php:131
+msgid "Failed to retrieve Amadeus API access token."
+msgstr ""
+
+#: includes/class-amadeus-api.php:206
+#, php-format
+msgid "Amadeus API request failed with status %s."
+msgstr ""
+
+#: includes/class-amadeus-api.php:229
+#: includes/class-amadeus-api.php:298
+msgid "Search criteria cannot be empty."
+msgstr ""
+
+#: includes/class-amadeus-api.php:253
+msgid "Search keyword cannot be empty."
+msgstr ""
+
+#: includes/class-amadeus-flight-search-main.php:114
+msgid "Booking area placeholder template not found."
+msgstr ""
+
+#: includes/class-amadeus-flight-search-main.php:208
+msgid "Hotel search is currently disabled."
+msgstr ""
+
+#: includes/class-amadeus-flight-search-main.php:231
+#: includes/class-amadeus-flight-search-main.php:232
+msgid "Loading..."
+msgstr ""
+
+#: includes/class-amadeus-flight-search-main.php:233
+msgid "An unexpected error occurred. Please try again."
+msgstr ""
+
+#: includes/class-amadeus-flight-search-main.php:234
+msgid "No hotels found matching your criteria."
+msgstr ""
+
+#: includes/class-amadeus-flight-search-main.php:235
+msgid "Select Hotel"
+msgstr ""
+
+#: includes/class-amadeus-flight-search-main.php:236
+msgid "per night"
+msgstr ""
+
+#: includes/class-amadeus-flight-search-main.php:237
+msgid "Please fill all required fields."
+msgstr ""
+
+#: includes/class-amadeus-flight-search-main.php:238
+msgid "Hotel booking page URL is not configured in plugin settings."
+msgstr ""
+
+#: includes/class-amadeus-flight-search-main.php:239
+msgid "Could not select hotel."
+msgstr ""
+
+#: includes/class-ajax.php:78
+msgid "Search term cannot be empty."
+msgstr ""
+
+#: includes/class-ajax.php:114
+msgid "No locations found or API error."
+msgstr ""
+
+#: includes/class-ajax.php:128
+msgid "Invalid search parameters."
+msgstr ""
+
+#: includes/class-ajax.php:142
+msgid "Missing required search fields (origin, destination, departure date)."
+msgstr ""
+
+#: includes/class-ajax.php:206
+msgid "No flights found matching your criteria."
+msgstr ""
+
+#: includes/class-ajax.php:210
+msgid "No flights found or an API error occurred."
+msgstr ""
+
+#: includes/class-ajax.php:225
+msgid "No flight offer data received."
+msgstr ""
+
+#: includes/class-ajax.php:233
+msgid "Invalid flight offer data format."
+msgstr ""
+
+#: includes/class-ajax.php:249
+msgid "Booking page URL is not configured in plugin settings."
+msgstr ""
+
+#: includes/class-hotel-ajax.php:38
+#: includes/class-hotel-ajax.php:101
+#: includes/class-hotel-ajax.php:211
+msgid "Hotel search feature is disabled."
+msgstr ""
+
+#: includes/class-hotel-ajax.php:43
+msgid "Search term must be at least 2 characters."
+msgstr ""
+
+#: includes/class-hotel-ajax.php:61
+msgid "No locations found."
+msgstr ""
+
+#: includes/class-hotel-ajax.php:73
+msgid "Missing required search fields."
+msgstr ""
+
+#: includes/class-hotel-ajax.php:79
+msgid "Could not find any hotels in the selected city."
+msgstr ""
+
+#: includes/class-hotel-ajax.php:85
+msgid "No hotel IDs found to search for offers."
+msgstr ""
+
+#: includes/class-hotel-ajax.php:111
+msgid "No available hotel offers found for your criteria."
+msgstr ""
+
+#: includes/class-hotel-ajax.php:216
+msgid "No hotel offer data received."
+msgstr ""
+
+#: includes/class-hotel-ajax.php:222
+msgid "Invalid hotel offer data format."
+msgstr ""
+
+#: includes/class-hotel-ajax.php:228
+msgid "Hotel selected successfully."
+msgstr ""

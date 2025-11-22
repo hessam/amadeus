@@ -1,0 +1,381 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Amadeus Flight Search\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-30 08:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.7.2; wp-6.8.1\n"
+"X-Domain: amadeus-flight-search"
+
+#: public/partials/search-form.php:62
+msgid "1 Adult, Economy"
+msgstr ""
+
+#: public/partials/search-form.php:73
+msgid "Adults"
+msgstr ""
+
+#. ID
+#: admin/class-amadeus-flight-search-admin.php:163
+msgid "Amadeus API Credentials"
+msgstr ""
+
+#: includes/class-amadeus-api.php:86
+msgid "Amadeus API Key or Secret is not configured."
+msgstr ""
+
+#: includes/class-amadeus-api.php:206
+#, php-format
+msgid "Amadeus API request failed with status %s."
+msgstr ""
+
+#. Name of the plugin
+#: admin/class-amadeus-flight-search-admin.php:101
+msgid "Amadeus Flight Search"
+msgstr ""
+
+#: amadeus-flight-search.php:109
+msgid ""
+"Amadeus Flight Search plugin critical file missing: class-amadeus-flight-"
+"search-main.php"
+msgstr ""
+
+#: amadeus-flight-search.php:86
+msgid "Amadeus Flight Search plugin critical file missing: class-settings.php"
+msgstr ""
+
+#: amadeus-flight-search.php:95
+msgid "Amadeus Flight Search plugin critical file missing: helpers.php"
+msgstr ""
+
+#: includes/class-amadeus-flight-search-main.php:135
+msgid "An unexpected error occurred. Please try again."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:195
+msgid "API Environment"
+msgstr ""
+
+#. ID
+#: admin/class-amadeus-flight-search-admin.php:170
+msgid "API Key"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:182
+msgid "API Secret"
+msgstr ""
+
+#: includes/class-amadeus-flight-search-main.php:114
+msgid "Booking area placeholder template not found."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:231
+msgid "Booking Page URL"
+msgstr ""
+
+#: includes/class-ajax.php:249
+msgid "Booking page URL is not configured in plugin settings."
+msgstr ""
+
+#: public/partials/search-form.php:101
+msgid "Business"
+msgstr ""
+
+#: public/partials/search-form.php:81
+msgid "Children"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:302
+msgid "Configure the pages used by the plugin for search results and booking."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:263
+msgid "Currency Code"
+msgstr ""
+
+#: public/partials/search-form.php:75
+msgid "Decrease adults"
+msgstr ""
+
+#: public/partials/search-form.php:83
+msgid "Decrease children"
+msgstr ""
+
+#: public/partials/search-form.php:91
+msgid "Decrease infants"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:269
+msgid "Default currency code for flight searches (e.g., USD, EUR)."
+msgstr ""
+
+#: public/partials/search-form.php:50
+msgid "Depart"
+msgstr ""
+
+#: public/partials/search-form.php:43
+msgid "Destination airport or city"
+msgstr ""
+
+#: public/partials/search-form.php:105
+msgid "Done"
+msgstr ""
+
+#: public/partials/search-form.php:99
+msgid "Economy"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:276
+msgid "Enable Debug Mode"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:282
+msgid ""
+"Enable detailed logging to the PHP error log (requires WP_DEBUG and "
+"WP_DEBUG_LOG to be true)."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:225
+msgid ""
+"Enter the full URL or Page ID for displaying flight search results. If "
+"different from the search form page. Leave blank if results are on the same "
+"page as the search form."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:237
+msgid ""
+"Enter the full URL or Page ID of the page containing the <code>"
+"[amadeus_flight_booking]</code> shortcode."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:249
+msgid "Enter the ID of the Gravity Form to be used for bookings."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:293
+msgid ""
+"Enter your Amadeus API credentials below. These are required to connect to "
+"the Amadeus service."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:176
+msgid "Enter your Amadeus API Key."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:188
+msgid "Enter your Amadeus API Secret."
+msgstr ""
+
+#: includes/class-amadeus-api.php:131
+msgid "Failed to retrieve Amadeus API access token."
+msgstr ""
+
+#: public/partials/search-form.php:102
+msgid "First Class"
+msgstr ""
+
+#. Page title
+#: admin/class-amadeus-flight-search-admin.php:102
+msgid "Flight Search"
+msgstr ""
+
+#: public/partials/search-form.php:36
+msgid "From"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:311
+msgid "General plugin settings."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:256
+msgid "General Settings"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:243
+msgid "Gravity Form ID for Booking"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://yourwebsite.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://yourwebsite.com/amadeus-flight-search"
+msgstr ""
+
+#: public/partials/search-form.php:77
+msgid "Increase adults"
+msgstr ""
+
+#: public/partials/search-form.php:85
+msgid "Increase children"
+msgstr ""
+
+#: public/partials/search-form.php:92
+msgid "Increase infants"
+msgstr ""
+
+#: public/partials/search-form.php:89
+msgid "Infants"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Integrates Amadeus Self-Service Flight API for flight search and booking via "
+"Gravity Forms."
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:477
+msgid ""
+"Invalid currency code. Please use a 3-letter uppercase format (e.g., USD)."
+msgstr ""
+
+#: includes/class-ajax.php:233
+msgid "Invalid flight offer data format."
+msgstr ""
+
+#: includes/class-ajax.php:128
+msgid "Invalid search parameters."
+msgstr ""
+
+#: public/partials/booking-form.php:33
+msgid "Loading flight details..."
+msgstr ""
+
+#: public/partials/results.php:32
+msgid "Loading more results..."
+msgstr ""
+
+#: includes/class-amadeus-flight-search-main.php:134
+msgid "Loading..."
+msgstr ""
+
+#: includes/class-ajax.php:142
+msgid "Missing required search fields (origin, destination, departure date)."
+msgstr ""
+
+#: includes/class-ajax.php:225
+msgid "No flight offer data received."
+msgstr ""
+
+#: includes/class-ajax.php:206
+#: includes/class-amadeus-flight-search-main.php:136
+msgid "No flights found matching your criteria."
+msgstr ""
+
+#: includes/class-ajax.php:210
+msgid "No flights found or an API error occurred."
+msgstr ""
+
+#: includes/class-ajax.php:114
+msgid "No locations found or API error."
+msgstr ""
+
+#: public/partials/search-form.php:26
+msgid "One Way"
+msgstr ""
+
+#: public/partials/search-form.php:37
+msgid "Origin airport or city"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:212
+msgid "Page Configuration"
+msgstr ""
+
+#: public/partials/search-form.php:61
+msgid "Passengers & Class"
+msgstr ""
+
+#: public/partials/search-form.php:100
+msgid "Premium Economy"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:203
+msgid "Production (Live)"
+msgstr ""
+
+#: public/partials/search-form.php:54
+msgid "Return"
+msgstr ""
+
+#: public/partials/search-form.php:30
+msgid "Round Trip"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:138
+msgid "Save Settings"
+msgstr ""
+
+#: includes/class-amadeus-api.php:298
+msgid "Search criteria cannot be empty."
+msgstr ""
+
+#: public/partials/search-form.php:20 public/partials/search-form.php:118
+msgid "Search Flights"
+msgstr ""
+
+#: includes/class-amadeus-api.php:229
+msgid "Search keyword cannot be empty."
+msgstr ""
+
+#: public/partials/search-form.php:111
+msgid "Search non-stop flights only"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:219
+msgid "Search Results Page URL"
+msgstr ""
+
+#: includes/class-ajax.php:78
+msgid "Search term cannot be empty."
+msgstr ""
+
+#: public/partials/search-form.php:127
+msgid "Searching for the best flights..."
+msgstr ""
+
+#: includes/class-amadeus-flight-search-main.php:137
+msgid "Select Flight"
+msgstr ""
+
+#: public/partials/search-form.php:71
+msgid "Select Passengers"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:205
+msgid "Select the API environment."
+msgstr ""
+
+#: public/partials/search-form.php:96
+msgid "Select Travel Class"
+msgstr ""
+
+#: admin/class-amadeus-flight-search-admin.php:202
+msgid "Test (Sandbox)"
+msgstr ""
+
+#: public/partials/search-form.php:42
+msgid "To"
+msgstr ""
+
+#. Author of the plugin
+msgid "Your Name"
+msgstr ""
+
+#: public/partials/booking-form.php:31
+msgid "Your Selected Flight Summary"
+msgstr ""
+
+#: public/partials/search-form.php:51 public/partials/search-form.php:55
+msgid "YYYY-MM-DD"
+msgstr ""

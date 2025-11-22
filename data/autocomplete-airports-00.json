@@ -1,0 +1,2153 @@
+[
+    {
+        "iata": "ATL",
+        "type": "airport",
+        "name": "Hartsfield-Jackson Atlanta International Airport",
+        "city": "Atlanta",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["atlanta", "hartsfield", "atl"],
+        "rank": 1
+    },
+    {
+        "iata": "DXB",
+        "type": "airport",
+        "name": "Dubai International Airport",
+        "city": "Dubai",
+        "country": "Birleşik Arap Emirlikleri",
+        "aliases": ["dubai", "dxb"],
+        "rank": 2
+    },
+    {
+        "iata": "QDF",
+        "type": "city",
+        "name": "Dallas (Any Airport)",
+        "city": "Dallas",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["dallas", "qdf"],
+        "rank": 0
+    },
+    {
+        "iata": "DFW",
+        "type": "airport",
+        "name": "Dallas/Fort Worth International Airport",
+        "city": "Dallas",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["dallas", "fort worth", "dfw"],
+        "rank": 3
+    },
+    {
+        "iata": "LON",
+        "type": "city",
+        "name": "London (Any Airport)",
+        "city": "London",
+        "country": "Birleşik Krallık",
+        "aliases": ["london", "londra", "lon"],
+        "rank": 0
+    },
+    {
+        "iata": "LHR",
+        "type": "airport",
+        "name": "Heathrow Airport",
+        "city": "London",
+        "country": "Birleşik Krallık",
+        "aliases": ["london", "londra", "heathrow", "lhr"],
+        "rank": 4
+    },
+    {
+        "iata": "TYO",
+        "type": "city",
+        "name": "Tokyo (Any Airport)",
+        "city": "Tokyo",
+        "country": "Japonya",
+        "aliases": ["tokyo", "tokio", "tyo"],
+        "rank": 0
+    },
+    {
+        "iata": "HND",
+        "type": "airport",
+        "name": "Haneda Airport",
+        "city": "Tokyo",
+        "country": "Japonya",
+        "aliases": ["tokyo", "tokio", "haneda", "hnd"],
+        "rank": 5
+    },
+    {
+        "iata": "DEN",
+        "type": "airport",
+        "name": "Denver International Airport",
+        "city": "Denver",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["denver", "den"],
+        "rank": 6
+    },
+    {
+        "iata": "IST",
+        "type": "city",
+        "name": "Istanbul (Any Airport)",
+        "city": "Istanbul",
+        "country": "Türkiye",
+        "aliases": ["istanbul", "ist"],
+        "rank": 0
+    },
+    {
+        "iata": "IST",
+        "type": "airport",
+        "name": "Istanbul Airport",
+        "city": "Istanbul",
+        "country": "Türkiye",
+        "aliases": ["istanbul", "ist"],
+        "rank": 7
+    },
+    {
+        "iata": "SAW",
+        "type": "airport",
+        "name": "Sabiha Gökçen International Airport",
+        "city": "Istanbul",
+        "country": "Türkiye",
+        "aliases": ["istanbul", "sabiha gokcen", "saw"],
+        "rank": 60
+    },
+    {
+        "iata": "LAX",
+        "type": "airport",
+        "name": "Los Angeles International Airport",
+        "city": "Los Angeles",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["los angeles", "lax"],
+        "rank": 8
+    },
+    {
+        "iata": "CHI",
+        "type": "city",
+        "name": "Chicago (Any Airport)",
+        "city": "Chicago",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["chicago", "şikago", "chi"],
+        "rank": 0
+    },
+    {
+        "iata": "ORD",
+        "type": "airport",
+        "name": "O'Hare International Airport",
+        "city": "Chicago",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["chicago", "şikago", "o'hare", "ord"],
+        "rank": 9
+    },
+    {
+        "iata": "DEL",
+        "type": "airport",
+        "name": "Indira Gandhi International Airport",
+        "city": "New Delhi",
+        "country": "Hindistan",
+        "aliases": ["new delhi", "yeni delhi", "indira gandhi", "del"],
+        "rank": 10
+    },
+    {
+        "iata": "PAR",
+        "type": "city",
+        "name": "Paris (Any Airport)",
+        "city": "Paris",
+        "country": "Fransa",
+        "aliases": ["paris", "par"],
+        "rank": 0
+    },
+    {
+        "iata": "CDG",
+        "type": "airport",
+        "name": "Charles de Gaulle Airport",
+        "city": "Paris",
+        "country": "Fransa",
+        "aliases": ["paris", "charles de gaulle", "cdg"],
+        "rank": 11
+    },
+    {
+        "iata": "JFK",
+        "type": "airport",
+        "name": "John F. Kennedy International Airport",
+        "city": "New York",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["new york", "jfk"],
+        "rank": 12
+    },
+    {
+        "iata": "NYC",
+        "type": "city",
+        "name": "New York (Any Airport)",
+        "city": "New York",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["new york", "nyc"],
+        "rank": 0
+    },
+    {
+        "iata": "AMS",
+        "type": "airport",
+        "name": "Amsterdam Airport Schiphol",
+        "city": "Amsterdam",
+        "country": "Hollanda",
+        "aliases": ["amsterdam", "schiphol", "ams"],
+        "rank": 13
+    },
+    {
+        "iata": "MAD",
+        "type": "airport",
+        "name": "Adolfo Suárez Madrid–Barajas Airport",
+        "city": "Madrid",
+        "country": "İspanya",
+        "aliases": ["madrid", "barajas", "mad"],
+        "rank": 14
+    },
+    {
+        "iata": "FRA",
+        "type": "airport",
+        "name": "Frankfurt Airport",
+        "city": "Frankfurt",
+        "country": "Almanya",
+        "aliases": ["frankfurt", "fra"],
+        "rank": 15
+    },
+    {
+        "iata": "CAN",
+        "type": "airport",
+        "name": "Guangzhou Baiyun International Airport",
+        "city": "Guangzhou",
+        "country": "Çin",
+        "aliases": ["guangzhou", "baiyun", "can"],
+        "rank": 16
+    },
+    {
+        "iata": "MCO",
+        "type": "airport",
+        "name": "Orlando International Airport",
+        "city": "Orlando",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["orlando", "mco"],
+        "rank": 17
+    },
+    {
+        "iata": "LAS",
+        "type": "airport",
+        "name": "Harry Reid International Airport",
+        "city": "Las Vegas",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["las vegas", "harry reid", "las"],
+        "rank": 18
+    },
+    {
+        "iata": "CLT",
+        "type": "airport",
+        "name": "Charlotte Douglas International Airport",
+        "city": "Charlotte",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["charlotte", "douglas", "clt"],
+        "rank": 19
+    },
+    {
+        "iata": "ICN",
+        "type": "airport",
+        "name": "Incheon International Airport",
+        "city": "Seoul",
+        "country": "Güney Kore",
+        "aliases": ["seoul", "seul", "incheon", "icn"],
+        "rank": 20
+    },
+    {
+        "iata": "SEL",
+        "type": "city",
+        "name": "Seoul (Any Airport)",
+        "city": "Seoul",
+        "country": "Güney Kore",
+        "aliases": ["seoul", "seul", "sel"],
+        "rank": 0
+    },
+    {
+        "iata": "MIA",
+        "type": "airport",
+        "name": "Miami International Airport",
+        "city": "Miami",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["miami", "mia"],
+        "rank": 21
+    },
+    {
+        "iata": "SEA",
+        "type": "airport",
+        "name": "Seattle–Tacoma International Airport",
+        "city": "Seattle",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["seattle", "tacoma", "sea"],
+        "rank": 22
+    },
+    {
+        "iata": "PHX",
+        "type": "airport",
+        "name": "Phoenix Sky Harbor International Airport",
+        "city": "Phoenix",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["phoenix", "sky harbor", "phx"],
+        "rank": 23
+    },
+    {
+        "iata": "EWR",
+        "type": "airport",
+        "name": "Newark Liberty International Airport",
+        "city": "Newark",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["newark", "liberty", "ewr"],
+        "rank": 24
+    },
+    {
+        "iata": "SFO",
+        "type": "airport",
+        "name": "San Francisco International Airport",
+        "city": "San Francisco",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["san francisco", "sfo"],
+        "rank": 25
+    },
+    {
+        "iata": "BCN",
+        "type": "airport",
+        "name": "Josep Tarradellas Barcelona–El Prat Airport",
+        "city": "Barcelona",
+        "country": "İspanya",
+        "aliases": ["barcelona", "barselona", "el prat", "bcn"],
+        "rank": 26
+    },
+    {
+        "iata": "BOM",
+        "type": "airport",
+        "name": "Chhatrapati Shivaji Maharaj International Airport",
+        "city": "Mumbai",
+        "country": "Hindistan",
+        "aliases": ["mumbai", "bombay", "chhatrapati shivaji", "bom"],
+        "rank": 27
+    },
+    {
+        "iata": "YYZ",
+        "type": "airport",
+        "name": "Toronto Pearson International Airport",
+        "city": "Toronto",
+        "country": "Kanada",
+        "aliases": ["toronto", "pearson", "yyz"],
+        "rank": 28
+    },
+    {
+        "iata": "LGW",
+        "type": "airport",
+        "name": "Gatwick Airport",
+        "city": "London",
+        "country": "Birleşik Krallık",
+        "aliases": ["london", "londra", "gatwick", "lgw"],
+        "rank": 29
+    },
+    {
+        "iata": "MUC",
+        "type": "airport",
+        "name": "Munich Airport",
+        "city": "Munich",
+        "country": "Almanya",
+        "aliases": ["munich", "münih", "muc"],
+        "rank": 30
+    },
+    {
+        "iata": "BOG",
+        "type": "airport",
+        "name": "El Dorado International Airport",
+        "city": "Bogotá",
+        "country": "Kolombiya",
+        "aliases": ["bogotá", "el dorado", "bog"],
+        "rank": 31
+    },
+    {
+        "iata": "SIN",
+        "type": "airport",
+        "name": "Singapore Changi Airport",
+        "city": "Singapore",
+        "country": "Singapur",
+        "aliases": ["singapore", "changi", "sin"],
+        "rank": 32
+    },
+    {
+        "iata": "PVG",
+        "type": "airport",
+        "name": "Shanghai Pudong International Airport",
+        "city": "Shanghai",
+        "country": "Çin",
+        "aliases": ["shanghai", "pudong", "pvg"],
+        "rank": 33
+    },
+    {
+        "iata": "MEX",
+        "type": "airport",
+        "name": "Mexico City International Airport",
+        "city": "Mexico City",
+        "country": "Meksika",
+        "aliases": ["mexico city", "mex", "benito juarez"],
+        "rank": 34
+    },
+    {
+        "iata": "HOU",
+        "type": "city",
+        "name": "Houston (Any Airport)",
+        "city": "Houston",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["houston"],
+        "rank": 0
+    },
+    {
+        "iata": "IAH",
+        "type": "airport",
+        "name": "George Bush Intercontinental Airport",
+        "city": "Houston",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["houston", "george bush", "iah"],
+        "rank": 35
+    },
+    {
+        "iata": "ROM",
+        "type": "city",
+        "name": "Rome (Any Airport)",
+        "city": "Rome",
+        "country": "İtalya",
+        "aliases": ["rome", "roma", "rom"],
+        "rank": 0
+    },
+    {
+        "iata": "FCO",
+        "type": "airport",
+        "name": "Leonardo da Vinci–Fiumicino Airport",
+        "city": "Rome",
+        "country": "İtalya",
+        "aliases": ["rome", "roma", "fiumicino", "fco"],
+        "rank": 36
+    },
+    {
+        "iata": "SYD",
+        "type": "airport",
+        "name": "Sydney Kingsford Smith Airport",
+        "city": "Sydney",
+        "country": "Avustralya",
+        "aliases": ["sydney", "kingsford smith", "syd"],
+        "rank": 37
+    },
+    {
+        "iata": "BKK",
+        "type": "airport",
+        "name": "Suvarnabhumi Airport",
+        "city": "Bangkok",
+        "country": "Tayland",
+        "aliases": ["bangkok", "suvarnabhumi", "bkk"],
+        "rank": 38
+    },
+    {
+        "iata": "LIS",
+        "type": "airport",
+        "name": "Humberto Delgado Airport (Lisbon Airport)",
+        "city": "Lisbon",
+        "country": "Portekiz",
+        "aliases": ["lisbon", "lizbon", "humberto delgado", "lis"],
+        "rank": 39
+    },
+    {
+        "iata": "DUB",
+        "type": "airport",
+        "name": "Dublin Airport",
+        "city": "Dublin",
+        "country": "İrlanda",
+        "aliases": ["dublin", "dub"],
+        "rank": 40
+    },
+    {
+        "iata": "VIE",
+        "type": "airport",
+        "name": "Vienna International Airport",
+        "city": "Vienna",
+        "country": "Avusturya",
+        "aliases": ["vienna", "viyana", "vie"],
+        "rank": 41
+    },
+    {
+        "iata": "CGK",
+        "type": "airport",
+        "name": "Soekarno–Hatta International Airport",
+        "city": "Jakarta",
+        "country": "Endonezya",
+        "aliases": ["jakarta", "soekarno-hatta", "cgk"],
+        "rank": 42
+    },
+    {
+        "iata": "ORY",
+        "type": "airport",
+        "name": "Orly Airport",
+        "city": "Paris",
+        "country": "Fransa",
+        "aliases": ["paris", "orly", "ory"],
+        "rank": 43
+    },
+    {
+        "iata": "BER",
+        "type": "airport",
+        "name": "Berlin Brandenburg Airport",
+        "city": "Berlin",
+        "country": "Almanya",
+        "aliases": ["berlin", "brandenburg", "ber"],
+        "rank": 44
+    },
+    {
+        "iata": "ZRH",
+        "type": "airport",
+        "name": "Zurich Airport",
+        "city": "Zurich",
+        "country": "İsviçre",
+        "aliases": ["zurich", "zürih", "zrh"],
+        "rank": 45
+    },
+    {
+        "iata": "KUL",
+        "type": "airport",
+        "name": "Kuala Lumpur International Airport",
+        "city": "Kuala Lumpur",
+        "country": "Malezya",
+        "aliases": ["kuala lumpur", "kul"],
+        "rank": 46
+    },
+    {
+        "iata": "ATH",
+        "type": "airport",
+        "name": "Athens International Airport",
+        "city": "Athens",
+        "country": "Yunanistan",
+        "aliases": ["athens", "atina", "ath"],
+        "rank": 47
+    },
+    {
+        "iata": "CPH",
+        "type": "airport",
+        "name": "Copenhagen Airport",
+        "city": "Copenhagen",
+        "country": "Danimarka",
+        "aliases": ["copenhagen", "kopenhag", "cph"],
+        "rank": 48
+    },
+    {
+        "iata": "GRU",
+        "type": "airport",
+        "name": "São Paulo/Guarulhos–Governador André Franco Montoro International Airport",
+        "city": "São Paulo",
+        "country": "Brezilya",
+        "aliases": ["são paulo", "guarulhos", "gru"],
+        "rank": 49
+    },
+    {
+        "iata": "PMI",
+        "type": "airport",
+        "name": "Palma de Mallorca Airport",
+        "city": "Palma de Mallorca",
+        "country": "İspanya",
+        "aliases": ["palma de mallorca", "pmi"],
+        "rank": 50
+    },
+    {
+        "iata": "OSL",
+        "type": "airport",
+        "name": "Oslo Gardermoen Airport",
+        "city": "Oslo",
+        "country": "Norveç",
+        "aliases": ["oslo", "gardermoen", "osl"],
+        "rank": 51
+    },
+    {
+        "iata": "SVO",
+        "type": "airport",
+        "name": "Sheremetyevo International Airport",
+        "city": "Moscow",
+        "country": "Rusya",
+        "aliases": ["moscow", "moskova", "sheremetyevo", "svo"],
+        "rank": 52
+    },
+    {
+        "iata": "MOW",
+        "type": "city",
+        "name": "Moscow (Any Airport)",
+        "city": "Moscow",
+        "country": "Rusya",
+        "aliases": ["moscow", "moskova", "mow"],
+        "rank": 0
+    },
+    {
+        "iata": "MNL",
+        "type": "airport",
+        "name": "Ninoy Aquino International Airport",
+        "city": "Manila",
+        "country": "Filipinler",
+        "aliases": ["manila", "ninoy aquino", "mnl"],
+        "rank": 53
+    },
+    {
+        "iata": "ARN",
+        "type": "airport",
+        "name": "Stockholm Arlanda Airport",
+        "city": "Stockholm",
+        "country": "İsveç",
+        "aliases": ["stockholm", "arlanda", "arn"],
+        "rank": 54
+    },
+    {
+        "iata": "STO",
+        "type": "city",
+        "name": "Stockholm (Any Airport)",
+        "city": "Stockholm",
+        "country": "İsveç",
+        "aliases": ["stockholm", "sto"],
+        "rank": 0
+    },
+    {
+        "iata": "HKG",
+        "type": "airport",
+        "name": "Hong Kong International Airport",
+        "city": "Hong Kong",
+        "country": "Hong Kong",
+        "aliases": ["hong kong", "hkg"],
+        "rank": 55
+    },
+    {
+        "iata": "BRU",
+        "type": "airport",
+        "name": "Brussels Airport",
+        "city": "Brussels",
+        "country": "Belçika",
+        "aliases": ["brussels", "brüksel", "bru"],
+        "rank": 56
+    },
+    {
+        "iata": "AYT",
+        "type": "airport",
+        "name": "Antalya Airport",
+        "city": "Antalya",
+        "country": "Türkiye",
+        "aliases": ["antalya", "ayt"],
+        "rank": 57
+    },
+    {
+        "iata": "GVA",
+        "type": "airport",
+        "name": "Geneva Airport",
+        "city": "Geneva",
+        "country": "İsviçre",
+        "aliases": ["geneva", "cenevre", "gva"],
+        "rank": 58
+    },
+    {
+        "iata": "TPE",
+        "type": "airport",
+        "name": "Taiwan Taoyuan International Airport",
+        "city": "Taipei",
+        "country": "Tayvan",
+        "aliases": ["taipei", "taoyuan", "tpe"],
+        "rank": 59
+    },
+    {
+        "iata": "WAS",
+        "type": "city",
+        "name": "Washington, D.C. (Any Airport)",
+        "city": "Washington, D.C.",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["washington", "vaşington", "dc", "was"],
+        "rank": 0
+    },
+    {
+        "iata": "IAD",
+        "type": "airport",
+        "name": "Dulles International Airport",
+        "city": "Washington, D.C.",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["washington", "vaşington", "dulles", "iad"],
+        "rank": 61
+    },
+    {
+        "iata": "DCA",
+        "type": "airport",
+        "name": "Ronald Reagan Washington National Airport",
+        "city": "Washington, D.C.",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["washington", "vaşington", "reagan", "dca"],
+        "rank": 62
+    },
+    {
+        "iata": "BOS",
+        "type": "airport",
+        "name": "Logan International Airport",
+        "city": "Boston",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["boston", "logan", "bos"],
+        "rank": 63
+    },
+    {
+        "iata": "DTW",
+        "type": "airport",
+        "name": "Detroit Metropolitan Airport",
+        "city": "Detroit",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["detroit", "dtw"],
+        "rank": 64
+    },
+    {
+        "iata": "MSP",
+        "type": "airport",
+        "name": "Minneapolis–Saint Paul International Airport",
+        "city": "Minneapolis",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["minneapolis", "saint paul", "msp"],
+        "rank": 65
+    },
+    {
+        "iata": "SLC",
+        "type": "airport",
+        "name": "Salt Lake City International Airport",
+        "city": "Salt Lake City",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["salt lake city", "slc"],
+        "rank": 66
+    },
+    {
+        "iata": "PHL",
+        "type": "airport",
+        "name": "Philadelphia International Airport",
+        "city": "Philadelphia",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["philadelphia", "phl"],
+        "rank": 67
+    },
+    {
+        "iata": "BWI",
+        "type": "airport",
+        "name": "Baltimore/Washington International Thurgood Marshall Airport",
+        "city": "Baltimore",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["baltimore", "washington", "bwi"],
+        "rank": 68
+    },
+    {
+        "iata": "SAN",
+        "type": "airport",
+        "name": "San Diego International Airport",
+        "city": "San Diego",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["san diego", "san"],
+        "rank": 69
+    },
+    {
+        "iata": "TPA",
+        "type": "airport",
+        "name": "Tampa International Airport",
+        "city": "Tampa",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["tampa", "tpa"],
+        "rank": 70
+    },
+    {
+        "iata": "FLL",
+        "type": "airport",
+        "name": "Fort Lauderdale–Hollywood International Airport",
+        "city": "Fort Lauderdale",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["fort lauderdale", "hollywood", "fll"],
+        "rank": 71
+    },
+    {
+        "iata": "MDW",
+        "type": "airport",
+        "name": "Midway International Airport",
+        "city": "Chicago",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["chicago", "şikago", "midway", "mdw"],
+        "rank": 72
+    },
+    {
+        "iata": "KMG",
+        "type": "airport",
+        "name": "Kunming Changshui International Airport",
+        "city": "Kunming",
+        "country": "Çin",
+        "aliases": ["kunming", "changshui", "kmg"],
+        "rank": 73
+    },
+    {
+        "iata": "XIY",
+        "type": "airport",
+        "name": "Xi'an Xianyang International Airport",
+        "city": "Xi'an",
+        "country": "Çin",
+        "aliases": ["xi'an", "xianyang", "xiy"],
+        "rank": 74
+    },
+    {
+        "iata": "HGH",
+        "type": "airport",
+        "name": "Hangzhou Xiaoshan International Airport",
+        "city": "Hangzhou",
+        "country": "Çin",
+        "aliases": ["hangzhou", "xiaoshan", "hgh"],
+        "rank": 75
+    },
+    {
+        "iata": "CKG",
+        "type": "airport",
+        "name": "Chongqing Jiangbei International Airport",
+        "city": "Chongqing",
+        "country": "Çin",
+        "aliases": ["chongqing", "jiangbei", "ckg"],
+        "rank": 76
+    },
+    {
+        "iata": "BLR",
+        "type": "airport",
+        "name": "Kempegowda International Airport",
+        "city": "Bengaluru",
+        "country": "Hindistan",
+        "aliases": ["bengaluru", "bangalore", "kempegowda", "blr"],
+        "rank": 77
+    },
+    {
+        "iata": "HYD",
+        "type": "airport",
+        "name": "Rajiv Gandhi International Airport",
+        "city": "Hyderabad",
+        "country": "Hindistan",
+        "aliases": ["hyderabad", "haydarabad", "rajiv gandhi", "hyd"],
+        "rank": 78
+    },
+    {
+        "iata": "MAA",
+        "type": "airport",
+        "name": "Chennai International Airport",
+        "city": "Chennai",
+        "country": "Hindistan",
+        "aliases": ["chennai", "madras", "maa"],
+        "rank": 79
+    },
+    {
+        "iata": "CCU",
+        "type": "airport",
+        "name": "Netaji Subhas Chandra Bose International Airport",
+        "city": "Kolkata",
+        "country": "Hindistan",
+        "aliases": ["kolkata", "kalküta", "calcutta", "netaji", "ccu"],
+        "rank": 80
+    },
+    {
+        "iata": "SGN",
+        "type": "airport",
+        "name": "Tan Son Nhat International Airport",
+        "city": "Ho Chi Minh City",
+        "country": "Vietnam",
+        "aliases": ["ho chi minh city", "tan son nhat", "sgn"],
+        "rank": 81
+    },
+    {
+        "iata": "HAN",
+        "type": "airport",
+        "name": "Noi Bai International Airport",
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "aliases": ["hanoi", "noi bai", "han"],
+        "rank": 82
+    },
+    {
+        "iata": "JED",
+        "type": "airport",
+        "name": "King Abdulaziz International Airport",
+        "city": "Jeddah",
+        "country": "Suudi Arabistan",
+        "aliases": ["jeddah", "cidde", "king abdulaziz", "jed"],
+        "rank": 83
+    },
+    {
+        "iata": "RUH",
+        "type": "airport",
+        "name": "King Khalid International Airport",
+        "city": "Riyadh",
+        "country": "Suudi Arabistan",
+        "aliases": ["riyadh", "riyad", "king khalid", "ruh"],
+        "rank": 84
+    },
+    {
+        "iata": "OPO",
+        "type": "airport",
+        "name": "Porto Airport",
+        "city": "Porto",
+        "country": "Portekiz",
+        "aliases": ["porto", "opo"],
+        "rank": 85
+    },
+    {
+        "iata": "HEL",
+        "type": "airport",
+        "name": "Helsinki Airport",
+        "city": "Helsinki",
+        "country": "Finlandiya",
+        "aliases": ["helsinki", "hel"],
+        "rank": 86
+    },
+    {
+        "iata": "DUS",
+        "type": "airport",
+        "name": "Düsseldorf Airport",
+        "city": "Düsseldorf",
+        "country": "Almanya",
+        "aliases": ["düsseldorf", "dus"],
+        "rank": 87
+    },
+    {
+        "iata": "WAW",
+        "type": "airport",
+        "name": "Warsaw Chopin Airport",
+        "city": "Warsaw",
+        "country": "Polonya",
+        "aliases": ["warsaw", "varşova", "chopin", "waw"],
+        "rank": 88
+    },
+    {
+        "iata": "MAN",
+        "type": "airport",
+        "name": "Manchester Airport",
+        "city": "Manchester",
+        "country": "Birleşik Krallık",
+        "aliases": ["manchester", "man"],
+        "rank": 89
+    },
+    {
+        "iata": "CUN",
+        "type": "airport",
+        "name": "Cancún International Airport",
+        "city": "Cancún",
+        "country": "Meksika",
+        "aliases": ["cancun", "cun"],
+        "rank": 90
+    },
+    {
+        "iata": "OTP",
+        "type": "airport",
+        "name": "Henri Coandă International Airport",
+        "city": "Bucharest",
+        "country": "Romanya",
+        "aliases": ["bucharest", "bükreş", "henri coanda", "otp"],
+        "rank": 91
+    },
+    {
+        "iata": "BUD",
+        "type": "airport",
+        "name": "Budapest Ferenc Liszt International Airport",
+        "city": "Budapest",
+        "country": "Macaristan",
+        "aliases": ["budapest", "budapeşte", "ferenc liszt", "bud"],
+        "rank": 92
+    },
+    {
+        "iata": "NRT",
+        "type": "airport",
+        "name": "Narita International Airport",
+        "city": "Tokyo",
+        "country": "Japonya",
+        "aliases": ["tokyo", "tokio", "narita", "nrt"],
+        "rank": 93
+    },
+    {
+        "iata": "PRG",
+        "type": "airport",
+        "name": "Václav Havel Airport Prague",
+        "city": "Prague",
+        "country": "Çekya",
+        "aliases": ["prague", "prag", "vaclav havel", "prg"],
+        "rank": 94
+    },
+    {
+        "iata": "CAI",
+        "type": "airport",
+        "name": "Cairo International Airport",
+        "city": "Cairo",
+        "country": "Mısır",
+        "aliases": ["cairo", "kahire", "cai"],
+        "rank": 95
+    },
+    {
+        "iata": "LGA",
+        "type": "airport",
+        "name": "LaGuardia Airport",
+        "city": "New York",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["new york", "laguardia", "lga"],
+        "rank": 96
+    },
+    {
+        "iata": "HOU",
+        "type": "airport",
+        "name": "William P. Hobby Airport",
+        "city": "Houston",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["houston", "hobby", "hou"],
+        "rank": 97
+    },
+    {
+        "iata": "YVR",
+        "type": "airport",
+        "name": "Vancouver International Airport",
+        "city": "Vancouver",
+        "country": "Kanada",
+        "aliases": ["vancouver", "yvr"],
+        "rank": 98
+    },
+    {
+        "iata": "DOH",
+        "type": "airport",
+        "name": "Hamad International Airport",
+        "city": "Doha",
+        "country": "Katar",
+        "aliases": ["doha", "hamad", "doh"],
+        "rank": 99
+    },
+    {
+        "iata": "STN",
+        "type": "airport",
+        "name": "Stansted Airport",
+        "city": "London",
+        "country": "Birleşik Krallık",
+        "aliases": ["london", "londra", "stansted", "stn"],
+        "rank": 100
+    },
+    {
+        "iata": "NCE",
+        "type": "airport",
+        "name": "Nice Côte d'Azur Airport",
+        "city": "Nice",
+        "country": "Fransa",
+        "aliases": ["nice", "cote d'azur", "nce"],
+        "rank": 101
+    },
+    {
+        "iata": "MIL",
+        "type": "city",
+        "name": "Milan (Any Airport)",
+        "city": "Milan",
+        "country": "İtalya",
+        "aliases": ["milan", "milano", "mil"],
+        "rank": 0
+    },
+    {
+        "iata": "MXP",
+        "type": "airport",
+        "name": "Milan–Malpensa Airport",
+        "city": "Milan",
+        "country": "İtalya",
+        "aliases": ["milan", "milano", "malpensa", "mxp"],
+        "rank": 102
+    },
+    {
+        "iata": "AGP",
+        "type": "airport",
+        "name": "Málaga Airport",
+        "city": "Málaga",
+        "country": "İspanya",
+        "aliases": ["malaga", "agp"],
+        "rank": 103
+    },
+    {
+        "iata": "ALC",
+        "type": "airport",
+        "name": "Alicante–Elche Miguel Hernández Airport",
+        "city": "Alicante",
+        "country": "İspanya",
+        "aliases": ["alicante", "elche", "alc"],
+        "rank": 104
+    },
+    {
+        "iata": "JNB",
+        "type": "airport",
+        "name": "O. R. Tambo International Airport",
+        "city": "Johannesburg",
+        "country": "Güney Afrika",
+        "aliases": ["johannesburg", "o. r. tambo", "jnb"],
+        "rank": 105
+    },
+    {
+        "iata": "ADD",
+        "type": "airport",
+        "name": "Bole International Airport",
+        "city": "Addis Ababa",
+        "country": "Etiyopya",
+        "aliases": ["addis ababa", "bole", "add"],
+        "rank": 106
+    },
+    {
+        "iata": "KIX",
+        "type": "airport",
+        "name": "Kansai International Airport",
+        "city": "Osaka",
+        "country": "Japonya",
+        "aliases": ["osaka", "kansai", "kix"],
+        "rank": 107
+    },
+    {
+        "iata": "FUK",
+        "type": "airport",
+        "name": "Fukuoka Airport",
+        "city": "Fukuoka",
+        "country": "Japonya",
+        "aliases": ["fukuoka", "fuk"],
+        "rank": 108
+    },
+    {
+        "iata": "CTS",
+        "type": "airport",
+        "name": "New Chitose Airport",
+        "city": "Sapporo",
+        "country": "Japonya",
+        "aliases": ["sapporo", "new chitose", "cts"],
+        "rank": 109
+    },
+    {
+        "iata": "PEK",
+        "type": "airport",
+        "name": "Beijing Capital International Airport",
+        "city": "Beijing",
+        "country": "Çin",
+        "aliases": ["beijing", "pekin", "capital", "pek"],
+        "rank": 110
+    },
+    {
+        "iata": "BJS",
+        "type": "city",
+        "name": "Beijing (Any Airport)",
+        "city": "Beijing",
+        "country": "Çin",
+        "aliases": ["beijing", "pekin", "bjs"],
+        "rank": 0
+    },
+    {
+        "iata": "SCL",
+        "type": "airport",
+        "name": "Arturo Merino Benítez International Airport",
+        "city": "Santiago",
+        "country": "Şili",
+        "aliases": ["santiago", "arturo merino benitez", "scl"],
+        "rank": 111
+    },
+    {
+        "iata": "AUH",
+        "type": "airport",
+        "name": "Zayed International Airport",
+        "city": "Abu Dhabi",
+        "country": "Birleşik Arap Emirlikleri",
+        "aliases": ["abu dhabi", "zayed", "auh"],
+        "rank": 112
+    },
+    {
+        "iata": "CGH",
+        "type": "airport",
+        "name": "São Paulo–Congonhas Airport",
+        "city": "São Paulo",
+        "country": "Brezilya",
+        "aliases": ["são paulo", "congonhas", "cgh"],
+        "rank": 113
+    },
+    {
+        "iata": "VKO",
+        "type": "airport",
+        "name": "Vnukovo International Airport",
+        "city": "Moscow",
+        "country": "Rusya",
+        "aliases": ["moscow", "moskova", "vnukovo", "vko"],
+        "rank": 114
+    },
+    {
+        "iata": "DMK",
+        "type": "airport",
+        "name": "Don Mueang International Airport",
+        "city": "Bangkok",
+        "country": "Tayland",
+        "aliases": ["bangkok", "don mueang", "dmk"],
+        "rank": 115
+    },
+    {
+        "iata": "CGY",
+        "type": "airport",
+        "name": "Laguindingan Airport",
+        "city": "Cagayan de Oro",
+        "country": "Filipinler",
+        "aliases": ["cagayan de oro", "laguindingan", "cgy"],
+        "rank": 116
+    },
+    {
+        "iata": "MEL",
+        "type": "airport",
+        "name": "Melbourne Airport",
+        "city": "Melbourne",
+        "country": "Avustralya",
+        "aliases": ["melbourne", "tullamarine", "mel"],
+        "rank": 117
+    },
+    {
+        "iata": "BNE",
+        "type": "airport",
+        "name": "Brisbane Airport",
+        "city": "Brisbane",
+        "country": "Avustralya",
+        "aliases": ["brisbane", "bne"],
+        "rank": 118
+    },
+    {
+        "iata": "PER",
+        "type": "airport",
+        "name": "Perth Airport",
+        "city": "Perth",
+        "country": "Avustralya",
+        "aliases": ["perth", "per"],
+        "rank": 119
+    },
+    {
+        "iata": "AKL",
+        "type": "airport",
+        "name": "Auckland Airport",
+        "city": "Auckland",
+        "country": "Yeni Zelanda",
+        "aliases": ["auckland", "akl"],
+        "rank": 120
+    },
+    {
+        "iata": "EZE",
+        "type": "airport",
+        "name": "Ministro Pistarini International Airport",
+        "city": "Buenos Aires",
+        "country": "Arjantin",
+        "aliases": ["buenos aires", "ezeiza", "eze"],
+        "rank": 121
+    },
+    {
+        "iata": "BUE",
+        "type": "city",
+        "name": "Buenos Aires (Any Airport)",
+        "city": "Buenos Aires",
+        "country": "Arjantin",
+        "aliases": ["buenos aires", "bue"],
+        "rank": 0
+    },
+    {
+        "iata": "LIM",
+        "type": "airport",
+        "name": "Jorge Chávez International Airport",
+        "city": "Lima",
+        "country": "Peru",
+        "aliases": ["lima", "jorge chavez", "lim"],
+        "rank": 122
+    },
+    {
+        "iata": "GIG",
+        "type": "airport",
+        "name": "Rio de Janeiro–Galeão International Airport",
+        "city": "Rio de Janeiro",
+        "country": "Brezilya",
+        "aliases": ["rio de janeiro", "galeão", "gig"],
+        "rank": 123
+    },
+    {
+        "iata": "RIO",
+        "type": "city",
+        "name": "Rio de Janeiro (Any Airport)",
+        "city": "Rio de Janeiro",
+        "country": "Brezilya",
+        "aliases": ["rio de janeiro", "rio"],
+        "rank": 0
+    },
+    {
+        "iata": "PTY",
+        "type": "airport",
+        "name": "Tocumen International Airport",
+        "city": "Panama City",
+        "country": "Panama",
+        "aliases": ["panama city", "tocumen", "pty"],
+        "rank": 124
+    },
+    {
+        "iata": "EDI",
+        "type": "airport",
+        "name": "Edinburgh Airport",
+        "city": "Edinburgh",
+        "country": "Birleşik Krallık",
+        "aliases": ["edinburgh", "edi"],
+        "rank": 125
+    },
+    {
+        "iata": "HAM",
+        "type": "airport",
+        "name": "Hamburg Airport",
+        "city": "Hamburg",
+        "country": "Almanya",
+        "aliases": ["hamburg", "ham"],
+        "rank": 126
+    },
+    {
+        "iata": "VCE",
+        "type": "airport",
+        "name": "Venice Marco Polo Airport",
+        "city": "Venice",
+        "country": "İtalya",
+        "aliases": ["venice", "venedik", "marco polo", "vce"],
+        "rank": 127
+    },
+    {
+        "iata": "BGY",
+        "type": "airport",
+        "name": "Orio al Serio International Airport",
+        "city": "Milan",
+        "country": "İtalya",
+        "aliases": ["milan", "milano", "bergamo", "orio al serio", "bgy"],
+        "rank": 128
+    },
+    {
+        "iata": "NAP",
+        "type": "airport",
+        "name": "Naples International Airport",
+        "city": "Naples",
+        "country": "İtalya",
+        "aliases": ["naples", "napoli", "capodichino", "nap"],
+        "rank": 129
+    },
+    {
+        "iata": "CTA",
+        "type": "airport",
+        "name": "Catania–Fontanarossa Airport",
+        "city": "Catania",
+        "country": "İtalya",
+        "aliases": ["catania", "fontanarossa", "cta"],
+        "rank": 130
+    },
+    {
+        "iata": "BLQ",
+        "type": "airport",
+        "name": "Bologna Guglielmo Marconi Airport",
+        "city": "Bologna",
+        "country": "İtalya",
+        "aliases": ["bologna", "guglielmo marconi", "blq"],
+        "rank": 131
+    },
+    {
+        "iata": "LIN",
+        "type": "airport",
+        "name": "Linate Airport",
+        "city": "Milan",
+        "country": "İtalya",
+        "aliases": ["milan", "milano", "linate", "lin"],
+        "rank": 132
+    },
+    {
+        "iata": "CIA",
+        "type": "airport",
+        "name": "Ciampino Airport",
+        "city": "Rome",
+        "country": "İtalya",
+        "aliases": ["rome", "roma", "ciampino", "cia"],
+        "rank": 133
+    },
+    {
+        "iata": "KRK",
+        "type": "airport",
+        "name": "John Paul II International Airport Kraków–Balice",
+        "city": "Kraków",
+        "country": "Polonya",
+        "aliases": ["kraków", "balice", "krk"],
+        "rank": 134
+    },
+    {
+        "iata": "SOF",
+        "type": "airport",
+        "name": "Sofia Airport",
+        "city": "Sofia",
+        "country": "Bulgaristan",
+        "aliases": ["sofia", "sofya", "sof"],
+        "rank": 135
+    },
+    {
+        "iata": "BEG",
+        "type": "airport",
+        "name": "Belgrade Nikola Tesla Airport",
+        "city": "Belgrade",
+        "country": "Sırbistan",
+        "aliases": ["belgrade", "belgrad", "nikola tesla", "beg"],
+        "rank": 136
+    },
+    {
+        "iata": "TLV",
+        "type": "airport",
+        "name": "Ben Gurion Airport",
+        "city": "Tel Aviv",
+        "country": "İsrail",
+        "aliases": ["tel aviv", "ben gurion", "tlv"],
+        "rank": 137
+    },
+    {
+        "iata": "AMM",
+        "type": "airport",
+        "name": "Queen Alia International Airport",
+        "city": "Amman",
+        "country": "Ürdün",
+        "aliases": ["amman", "queen alia", "amm"],
+        "rank": 138
+    },
+    {
+        "iata": "BEY",
+        "type": "airport",
+        "name": "Beirut–Rafic Hariri International Airport",
+        "city": "Beirut",
+        "country": "Lübnan",
+        "aliases": ["beirut", "beyrut", "rafic hariri", "bey"],
+        "rank": 139
+    },
+    {
+        "iata": "KWI",
+        "type": "airport",
+        "name": "Kuwait International Airport",
+        "city": "Kuwait City",
+        "country": "Kuveyt",
+        "aliases": ["kuwait city", "kuveyt", "kwi"],
+        "rank": 140
+    },
+    {
+        "iata": "MCT",
+        "type": "airport",
+        "name": "Muscat International Airport",
+        "city": "Muscat",
+        "country": "Umman",
+        "aliases": ["muscat", "maskat", "mct"],
+        "rank": 141
+    },
+    {
+        "iata": "BAH",
+        "type": "airport",
+        "name": "Bahrain International Airport",
+        "city": "Bahrain",
+        "country": "Bahreyn",
+        "aliases": ["bahrain", "bahreyn", "bah"],
+        "rank": 142
+    },
+    {
+        "iata": "CMN",
+        "type": "airport",
+        "name": "Mohammed V International Airport",
+        "city": "Casablanca",
+        "country": "Fas",
+        "aliases": ["casablanca", "kazablanka", "mohammed v", "cmn"],
+        "rank": 143
+    },
+    {
+        "iata": "NBO",
+        "type": "airport",
+        "name": "Jomo Kenyatta International Airport",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "aliases": ["nairobi", "jomo kenyatta", "nbo"],
+        "rank": 144
+    },
+    {
+        "iata": "YUL",
+        "type": "airport",
+        "name": "Montréal–Trudeau International Airport",
+        "city": "Montreal",
+        "country": "Kanada",
+        "aliases": ["montreal", "trudeau", "yul"],
+        "rank": 145
+    },
+    {
+        "iata": "YYC",
+        "type": "airport",
+        "name": "Calgary International Airport",
+        "city": "Calgary",
+        "country": "Kanada",
+        "aliases": ["calgary", "yyc"],
+        "rank": 146
+    },
+    {
+        "iata": "GDL",
+        "type": "airport",
+        "name": "Guadalajara International Airport",
+        "city": "Guadalajara",
+        "country": "Meksika",
+        "aliases": ["guadalajara", "gdl"],
+        "rank": 147
+    },
+    {
+        "iata": "ESB",
+        "type": "airport",
+        "name": "Ankara Esenboğa Airport",
+        "city": "Ankara",
+        "country": "Türkiye",
+        "aliases": ["ankara", "esenboga", "esb"],
+        "rank": 148
+    },
+    {
+        "iata": "ADB",
+        "type": "airport",
+        "name": "Adnan Menderes Airport",
+        "city": "İzmir",
+        "country": "Türkiye",
+        "aliases": ["izmir", "adnan menderes", "adb"],
+        "rank": 149
+    },
+    {
+        "iata": "SJJ",
+        "type": "airport",
+        "name": "Sarajevo International Airport",
+        "city": "Sarajevo",
+        "country": "Bosna-Hersek",
+        "aliases": ["sarajevo", "saraybosna", "sjj"],
+        "rank": 150
+    },
+    {
+        "iata": "SKP",
+        "type": "airport",
+        "name": "Skopje International Airport",
+        "city": "Skopje",
+        "country": "Kuzey Makedonya",
+        "aliases": ["skopje", "üsküp", "skp"],
+        "rank": 151
+    },
+    {
+        "iata": "PRN",
+        "type": "airport",
+        "name": "Pristina International Airport Adem Jashari",
+        "city": "Pristina",
+        "country": "Kosova",
+        "aliases": ["pristina", "priştine", "adem jashari", "prn"],
+        "rank": 152
+    },
+    {
+        "iata": "KIV",
+        "type": "airport",
+        "name": "Chișinău International Airport",
+        "city": "Chișinău",
+        "country": "Moldova",
+        "aliases": ["chișinău", "kişinev", "kiv"],
+        "rank": 153
+    },
+    {
+        "iata": "IKA",
+        "type": "airport",
+        "name": "Imam Khomeini International Airport",
+        "city": "Tehran",
+        "country": "İran",
+        "aliases": ["tehran", "tahran", "imam khomeini", "ika"],
+        "rank": 154
+    },
+    {
+        "iata": "BGW",
+        "type": "airport",
+        "name": "Baghdad International Airport",
+        "city": "Baghdad",
+        "country": "Irak",
+        "aliases": ["baghdad", "bağdat", "bgw"],
+        "rank": 155
+    },
+    {
+        "iata": "DAL",
+        "type": "airport",
+        "name": "Dallas Love Field",
+        "city": "Dallas",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["dallas", "love field", "dal"],
+        "rank": 156
+    },
+    {
+        "iata": "LTN",
+        "type": "airport",
+        "name": "Luton Airport",
+        "city": "London",
+        "country": "Birleşik Krallık",
+        "aliases": ["london", "londra", "luton", "ltn"],
+        "rank": 157
+    },
+    {
+        "iata": "STR",
+        "type": "airport",
+        "name": "Stuttgart Airport",
+        "city": "Stuttgart",
+        "country": "Almanya",
+        "aliases": ["stuttgart", "str"],
+        "rank": 158
+    },
+    {
+        "iata": "CGN",
+        "type": "airport",
+        "name": "Cologne Bonn Airport",
+        "city": "Cologne",
+        "country": "Almanya",
+        "aliases": ["cologne", "köln", "bonn", "cgn"],
+        "rank": 159
+    },
+    {
+        "iata": "BSL",
+        "type": "airport",
+        "name": "EuroAirport Basel Mulhouse Freiburg",
+        "city": "Basel",
+        "country": "İsviçre",
+        "aliases": ["basel", "mulhouse", "freiburg", "bsl"],
+        "rank": 160
+    },
+    {
+        "iata": "LYS",
+        "type": "airport",
+        "name": "Lyon–Saint-Exupéry Airport",
+        "city": "Lyon",
+        "country": "Fransa",
+        "aliases": ["lyon", "saint-exupery", "lys"],
+        "rank": 161
+    },
+    {
+        "iata": "MRS",
+        "type": "airport",
+        "name": "Marseille Provence Airport",
+        "city": "Marseille",
+        "country": "Fransa",
+        "aliases": ["marseille", "marsilya", "provence", "mrs"],
+        "rank": 162
+    },
+    {
+        "iata": "TLS",
+        "type": "airport",
+        "name": "Toulouse–Blagnac Airport",
+        "city": "Toulouse",
+        "country": "Fransa",
+        "aliases": ["toulouse", "blagnac", "tls"],
+        "rank": 163
+    },
+    {
+        "iata": "NUE",
+        "type": "airport",
+        "name": "Nuremberg Airport",
+        "city": "Nuremberg",
+        "country": "Almanya",
+        "aliases": ["nuremberg", "nürnberg", "nue"],
+        "rank": 164
+    },
+    {
+        "iata": "KEF",
+        "type": "airport",
+        "name": "Keflavík Airport",
+        "city": "Reykjavik",
+        "country": "İzlanda",
+        "aliases": ["reykjavik", "keflavik", "kef"],
+        "rank": 165
+    },
+    {
+        "iata": "RIX",
+        "type": "airport",
+        "name": "Riga International Airport",
+        "city": "Riga",
+        "country": "Letonya",
+        "aliases": ["riga", "rix"],
+        "rank": 166
+    },
+    {
+        "iata": "VNO",
+        "type": "airport",
+        "name": "Vilnius Airport",
+        "city": "Vilnius",
+        "country": "Litvanya",
+        "aliases": ["vilnius", "vno"],
+        "rank": 167
+    },
+    {
+        "iata": "TLL",
+        "type": "airport",
+        "name": "Tallinn Airport",
+        "city": "Tallinn",
+        "country": "Estonya",
+        "aliases": ["tallinn", "tll"],
+        "rank": 168
+    },
+    {
+        "iata": "LCA",
+        "type": "airport",
+        "name": "Larnaca International Airport",
+        "city": "Larnaca",
+        "country": "Kıbrıs",
+        "aliases": ["larnaca", "lca"],
+        "rank": 169
+    },
+    {
+        "iata": "MLA",
+        "type": "airport",
+        "name": "Malta International Airport",
+        "city": "Malta",
+        "country": "Malta",
+        "aliases": ["malta", "mla"],
+        "rank": 170
+    },
+    {
+        "iata": "HER",
+        "type": "airport",
+        "name": "Heraklion International Airport",
+        "city": "Heraklion",
+        "country": "Yunanistan",
+        "aliases": ["heraklion", "girit", "her"],
+        "rank": 171
+    },
+    {
+        "iata": "SKG",
+        "type": "airport",
+        "name": "Thessaloniki Airport",
+        "city": "Thessaloniki",
+        "country": "Yunanistan",
+        "aliases": ["thessaloniki", "selanik", "skg"],
+        "rank": 172
+    },
+    {
+        "iata": "IBZ",
+        "type": "airport",
+        "name": "Ibiza Airport",
+        "city": "Ibiza",
+        "country": "İspanya",
+        "aliases": ["ibiza", "ibz"],
+        "rank": 173
+    },
+    {
+        "iata": "VLC",
+        "type": "airport",
+        "name": "Valencia Airport",
+        "city": "Valencia",
+        "country": "İspanya",
+        "aliases": ["valencia", "vlc"],
+        "rank": 174
+    },
+    {
+        "iata": "SVQ",
+        "type": "airport",
+        "name": "Seville Airport",
+        "city": "Seville",
+        "country": "İspanya",
+        "aliases": ["seville", "svq"],
+        "rank": 175
+    },
+    {
+        "iata": "FAO",
+        "type": "airport",
+        "name": "Faro Airport",
+        "city": "Faro",
+        "country": "Portekiz",
+        "aliases": ["faro", "fao"],
+        "rank": 176
+    },
+    {
+        "iata": "FLR",
+        "type": "airport",
+        "name": "Florence Airport, Peretola",
+        "city": "Florence",
+        "country": "İtalya",
+        "aliases": ["florence", "floransa", "peretola", "flr"],
+        "rank": 177
+    },
+    {
+        "iata": "PSA",
+        "type": "airport",
+        "name": "Pisa International Airport",
+        "city": "Pisa",
+        "country": "İtalya",
+        "aliases": ["pisa", "galileo galilei", "psa"],
+        "rank": 178
+    },
+    {
+        "iata": "TRN",
+        "type": "airport",
+        "name": "Turin Airport",
+        "city": "Turin",
+        "country": "İtalya",
+        "aliases": ["turin", "torino", "trn"],
+        "rank": 179
+    },
+    {
+        "iata": "DLM",
+        "type": "airport",
+        "name": "Dalaman Airport",
+        "city": "Dalaman",
+        "country": "Türkiye",
+        "aliases": ["dalaman", "muğla", "dlm"],
+        "rank": 180
+    },
+    {
+        "iata": "BJV",
+        "type": "airport",
+        "name": "Milas–Bodrum Airport",
+        "city": "Bodrum",
+        "country": "Türkiye",
+        "aliases": ["bodrum", "milas", "bjv"],
+        "rank": 181
+    },
+    {
+        "iata": "ADA",
+        "type": "airport",
+        "name": "Adana Şakirpaşa Airport",
+        "city": "Adana",
+        "country": "Türkiye",
+        "aliases": ["adana", "şakirpaşa", "ada"],
+        "rank": 182
+    },
+    {
+        "iata": "TZX",
+        "type": "airport",
+        "name": "Trabzon Airport",
+        "city": "Trabzon",
+        "country": "Türkiye",
+        "aliases": ["trabzon", "tzx"],
+        "rank": 183
+    },
+    {
+        "iata": "GZT",
+        "type": "airport",
+        "name": "Gaziantep Oğuzeli International Airport",
+        "city": "Gaziantep",
+        "country": "Türkiye",
+        "aliases": ["gaziantep", "oğuzeli", "gzt"],
+        "rank": 184
+    },
+    {
+        "iata": "DME",
+        "type": "airport",
+        "name": "Domodedovo Airport",
+        "city": "Moscow",
+        "country": "Rusya",
+        "aliases": ["moscow", "moskova", "domodedovo", "dme"],
+        "rank": 185
+    },
+    {
+        "iata": "LED",
+        "type": "airport",
+        "name": "Pulkovo Airport",
+        "city": "Saint Petersburg",
+        "country": "Rusya",
+        "aliases": ["saint petersburg", "pulkovo", "led"],
+        "rank": 186
+    },
+    {
+        "iata": "AER",
+        "type": "airport",
+        "name": "Sochi International Airport",
+        "city": "Sochi",
+        "country": "Rusya",
+        "aliases": ["sochi", "aer"],
+        "rank": 187
+    },
+    {
+        "iata": "KZN",
+        "type": "airport",
+        "name": "Kazan International Airport",
+        "city": "Kazan",
+        "country": "Rusya",
+        "aliases": ["kazan", "kzn"],
+        "rank": 188
+    },
+    {
+        "iata": "SVX",
+        "type": "airport",
+        "name": "Koltsovo International Airport",
+        "city": "Yekaterinburg",
+        "country": "Rusya",
+        "aliases": ["yekaterinburg", "koltsovo", "svx"],
+        "rank": 189
+    },
+    {
+        "iata": "OVB",
+        "type": "airport",
+        "name": "Tolmachevo Airport",
+        "city": "Novosibirsk",
+        "country": "Rusya",
+        "aliases": ["novosibirsk", "tolmachevo", "ovb"],
+        "rank": 190
+    },
+    {
+        "iata": "KBP",
+        "type": "airport",
+        "name": "Boryspil International Airport",
+        "city": "Kyiv",
+        "country": "Ukrayna",
+        "aliases": ["kyiv", "kiev", "boryspil", "kbp"],
+        "rank": 191
+    },
+    {
+        "iata": "IEV",
+        "type": "city",
+        "name": "Kyiv (Any Airport)",
+        "city": "Kyiv",
+        "country": "Ukrayna",
+        "aliases": ["kyiv", "kiev", "iev"],
+        "rank": 0
+    },
+    {
+        "iata": "MSQ",
+        "type": "airport",
+        "name": "Minsk National Airport",
+        "city": "Minsk",
+        "country": "Belarus",
+        "aliases": ["minsk", "msq"],
+        "rank": 192
+    },
+    {
+        "iata": "ALA",
+        "type": "airport",
+        "name": "Almaty International Airport",
+        "city": "Almaty",
+        "country": "Kazakistan",
+        "aliases": ["almaty", "ala"],
+        "rank": 193
+    },
+    {
+        "iata": "NQZ",
+        "type": "airport",
+        "name": "Nursultan Nazarbayev International Airport",
+        "city": "Astana",
+        "country": "Kazakistan",
+        "aliases": ["astana", "nursultan", "nqz"],
+        "rank": 194
+    },
+    {
+        "iata": "TAS",
+        "type": "airport",
+        "name": "Tashkent International Airport",
+        "city": "Tashkent",
+        "country": "Özbekistan",
+        "aliases": ["tashkent", "taşkent", "tas"],
+        "rank": 195
+    },
+    {
+        "iata": "GYD",
+        "type": "airport",
+        "name": "Heydar Aliyev International Airport",
+        "city": "Baku",
+        "country": "Azerbaycan",
+        "aliases": ["baku", "bakü", "heydar aliyev", "gyd"],
+        "rank": 196
+    },
+    {
+        "iata": "TBS",
+        "type": "airport",
+        "name": "Tbilisi International Airport",
+        "city": "Tbilisi",
+        "country": "Gürcistan",
+        "aliases": ["tbilisi", "tiflis", "tbs"],
+        "rank": 197
+    },
+    {
+        "iata": "EVN",
+        "type": "airport",
+        "name": "Zvartnots International Airport",
+        "city": "Yerevan",
+        "country": "Ermenistan",
+        "aliases": ["yerevan", "erivan", "zvartnots", "evn"],
+        "rank": 198
+    },
+    {
+        "iata": "SJU",
+        "type": "airport",
+        "name": "Luis Muñoz Marín International Airport",
+        "city": "San Juan",
+        "country": "Porto Riko",
+        "aliases": ["san juan", "luis munoz marin", "sju"],
+        "rank": 199
+    },
+    {
+        "iata": "BNA",
+        "type": "airport",
+        "name": "Nashville International Airport",
+        "city": "Nashville",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["nashville", "bna"],
+        "rank": 200
+    },
+    {
+        "iata": "AUS",
+        "type": "airport",
+        "name": "Austin–Bergstrom International Airport",
+        "city": "Austin",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["austin", "bergstrom", "aus"],
+        "rank": 201
+    },
+    {
+        "iata": "RDU",
+        "type": "airport",
+        "name": "Raleigh–Durham International Airport",
+        "city": "Raleigh",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["raleigh", "durham", "rdu"],
+        "rank": 202
+    },
+    {
+        "iata": "STL",
+        "type": "airport",
+        "name": "St. Louis Lambert International Airport",
+        "city": "St. Louis",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["st. louis", "lambert", "stl"],
+        "rank": 203
+    },
+    {
+        "iata": "HNL",
+        "type": "airport",
+        "name": "Daniel K. Inouye International Airport",
+        "city": "Honolulu",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["honolulu", "daniel k. inouye", "hnl"],
+        "rank": 204
+    },
+    {
+        "iata": "PDX",
+        "type": "airport",
+        "name": "Portland International Airport",
+        "city": "Portland",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["portland", "pdx"],
+        "rank": 205
+    },
+    {
+        "iata": "MCI",
+        "type": "airport",
+        "name": "Kansas City International Airport",
+        "city": "Kansas City",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["kansas city", "mci"],
+        "rank": 206
+    },
+    {
+        "iata": "CLE",
+        "type": "airport",
+        "name": "Cleveland Hopkins International Airport",
+        "city": "Cleveland",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["cleveland", "hopkins", "cle"],
+        "rank": 207
+    },
+    {
+        "iata": "IND",
+        "type": "airport",
+        "name": "Indianapolis International Airport",
+        "city": "Indianapolis",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["indianapolis", "ind"],
+        "rank": 208
+    },
+    {
+        "iata": "PIT",
+        "type": "airport",
+        "name": "Pittsburgh International Airport",
+        "city": "Pittsburgh",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["pittsburgh", "pit"],
+        "rank": 209
+    },
+    {
+        "iata": "CMH",
+        "type": "airport",
+        "name": "John Glenn Columbus International Airport",
+        "city": "Columbus",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["columbus", "john glenn", "cmh"],
+        "rank": 210
+    },
+    {
+        "iata": "CVG",
+        "type": "airport",
+        "name": "Cincinnati/Northern Kentucky International Airport",
+        "city": "Cincinnati",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["cincinnati", "northern kentucky", "cvg"],
+        "rank": 211
+    },
+    {
+        "iata": "MKE",
+        "type": "airport",
+        "name": "Milwaukee Mitchell International Airport",
+        "city": "Milwaukee",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["milwaukee", "mitchell", "mke"],
+        "rank": 212
+    },
+    {
+        "iata": "SAT",
+        "type": "airport",
+        "name": "San Antonio International Airport",
+        "city": "San Antonio",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["san antonio", "sat"],
+        "rank": 213
+    },
+    {
+        "iata": "MSY",
+        "type": "airport",
+        "name": "Louis Armstrong New Orleans International Airport",
+        "city": "New Orleans",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["new orleans", "louis armstrong", "msy"],
+        "rank": 214
+    },
+    {
+        "iata": "SMF",
+        "type": "airport",
+        "name": "Sacramento International Airport",
+        "city": "Sacramento",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["sacramento", "smf"],
+        "rank": 215
+    },
+    {
+        "iata": "SJC",
+        "type": "airport",
+        "name": "San José International Airport",
+        "city": "San Jose",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["san jose", "norman y. mineta", "sjc"],
+        "rank": 216
+    },
+    {
+        "iata": "OAK",
+        "type": "airport",
+        "name": "Oakland International Airport",
+        "city": "Oakland",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["oakland", "oak"],
+        "rank": 217
+    },
+    {
+        "iata": "SNA",
+        "type": "airport",
+        "name": "John Wayne Airport",
+        "city": "Santa Ana",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["santa ana", "orange county", "john wayne", "sna"],
+        "rank": 218
+    },
+    {
+        "iata": "ONT",
+        "type": "airport",
+        "name": "Ontario International Airport",
+        "city": "Ontario",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["ontario", "california", "ont"],
+        "rank": 219
+    },
+    {
+        "iata": "BUR",
+        "type": "airport",
+        "name": "Hollywood Burbank Airport",
+        "city": "Burbank",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["burbank", "hollywood", "bur"],
+        "rank": 220
+    },
+    {
+        "iata": "LGB",
+        "type": "airport",
+        "name": "Long Beach Airport",
+        "city": "Long Beach",
+        "country": "Amerika Birleşik Devletleri",
+        "aliases": ["long beach", "lgb"],
+        "rank": 221
+    }
+]

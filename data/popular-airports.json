@@ -1,0 +1,11 @@
+[
+    { "name": "Istanbul Airport", "iataCode": "IST" },
+    { "name": "Sabiha Gokcen", "iataCode": "SAW" },
+    { "name": "London Heathrow", "iataCode": "LHR" },
+    { "name": "Paris Charles de Gaulle", "iataCode": "CDG" },
+    { "name": "Frankfurt Airport", "iataCode": "FRA" },
+    { "name": "Amsterdam Schiphol", "iataCode": "AMS" },
+    { "name": "John F. Kennedy Intl", "iataCode": "JFK" },
+    { "name": "Los Angeles Intl", "iataCode": "LAX" }
+    // Add more airports here (e.g., top 100-300 relevant to your users)
+]

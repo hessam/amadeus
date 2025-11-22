@@ -1,0 +1,642 @@
+/**
+ * Amadeus Flight Search Frontend Stylesheet
+ *
+ * Version: 2.0
+ * Description: Combined and refactored styles for flight and hotel search.
+ * Contains base styles, Skyscanner-style results cards, and modern form overrides.
+ */
+
+/* --- Base Variables --- */
+:root {
+    --afs-primary-color: #667eea; /* Override Purple */
+    --afs-primary-color-hover: #5a67d8; /* Darker Purple */
+    --afs-secondary-color: #764ba2; /* Gradient End */
+    --afs-secondary-color-hover: #6c44b5;
+    --afs-text-color: #2d3748; /* Dark Gray */
+    --afs-light-text-color: #4a5568; /* Medium Gray */
+    --afs-border-color: #e2e8f0; /* Light Gray */
+    --afs-background-color: #f7fafc; /* Off-white */
+    --afs-card-background: #fff;
+    --afs-input-background: #fff;
+    --afs-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --afs-spacing-unit: 8px;
+}
+
+/* --- General Styles & Reset --- */
+.afs-wrapper *,
+.afs-wrapper *::before,
+.afs-wrapper *::after {
+    box-sizing: border-box;
+}
+
+body .afs-wrapper {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: var(--afs-font-family);
+    color: var(--afs-text-color);
+}
+
+/* --- Form Container --- */
+.afs-wrapper form.afs-flight-search-form {
+    padding: 32px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+/* Form Header */
+form.afs-flight-search-form .afs-form-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+form.afs-flight-search-form .afs-form-header .afs-form-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--afs-text-color);
+    margin: 0 0 8px 0;
+}
+
+/* Trip Type Selector */
+form.afs-flight-search-form .afs-trip-type-selector.afs-form-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    background: var(--afs-background-color);
+    padding: 8px;
+    border-radius: 12px;
+}
+
+form.afs-flight-search-form .afs-trip-type-selector.afs-form-row .afs-radio-label {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    margin: 0;
+    display: block;
+    color: var(--afs-light-text-color);
+}
+
+form.afs-flight-search-form .afs-trip-type-selector.afs-form-row .afs-radio-label:has(input:checked) {
+    background: var(--afs-primary-color);
+    color: white;
+}
+
+form.afs-flight-search-form .afs-trip-type-selector.afs-form-row input[type="radio"] {
+    display: none;
+}
+
+/* Form Grid System */
+form.afs-flight-search-form .afs-form-row {
+    margin-bottom: 24px;
+}
+
+form.afs-flight-search-form .afs-form-row.afs-grid-responsive {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Full-width for single date picker */
+form.afs-flight-search-form .afs-date-inputs.afs-form-row.afs-grid-responsive:has(.afs-return-date-group[style*="none"]) {
+    grid-template-columns: 1fr;
+}
+
+/* Form Groups and Labels */
+form.afs-flight-search-form .afs-form-group {
+    position: relative;
+}
+
+form.afs-flight-search-form .afs-form-group .afs-label {
+    display: block;
+    font-weight: 600;
+    color: var(--afs-light-text-color);
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+/* Input Fields */
+form.afs-flight-search-form .afs-input,
+form.afs-flight-search-form .afs-select {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid var(--afs-border-color);
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background: var(--afs-input-background);
+    outline: none;
+}
+
+form.afs-flight-search-form .afs-input:focus,
+form.afs-flight-search-form .afs-select:focus {
+    border-color: var(--afs-primary-color);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+form.afs-flight-search-form .afs-input::placeholder {
+    color: #a0aec0;
+}
+
+/* Passengers & Class */
+form.afs-flight-search-form .afs-passengers-summary-group {
+    position: relative;
+}
+
+form.afs-flight-search-form .afs-passengers-summary-group .afs-input {
+    cursor: pointer;
+}
+
+form.afs-flight-search-form .afs-passengers-summary-group::after {
+    content: '▼';
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--afs-primary-color);
+    pointer-events: none;
+    margin-top: 14px; /* Adjust for label height */
+}
+
+/* Passenger Class Panel */
+form.afs-flight-search-form .afs-passenger-class-panel {
+    background: var(--afs-background-color);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 8px;
+    border: 2px solid var(--afs-border-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    z-index: 100;
+}
+
+form.afs-flight-search-form .afs-passenger-class-panel h4 {
+    color: var(--afs-text-color);
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    margin-top: 16px;
+}
+form.afs-flight-search-form .afs-passenger-class-panel h4:first-child {
+    margin-top: 0;
+}
+
+form.afs-flight-search-form .afs-passenger-class-panel .afs-passenger-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+form.afs-flight-search-form .afs-passenger-class-panel .afs-passenger-type label {
+    font-weight: 500;
+    color: var(--afs-light-text-color);
+}
+form.afs-flight-search-form .afs-passenger-class-panel .afs-passenger-type label small {
+    color: #718096;
+    font-weight: normal;
+}
+
+/* Stepper Controls */
+form.afs-flight-search-form .afs-passenger-class-panel .afs-stepper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+form.afs-flight-search-form .afs-passenger-class-panel .afs-stepper .afs-stepper-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--afs-border-color);
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--afs-primary-color);
+    transition: all 0.2s ease;
+}
+
+form.afs-flight-search-form .afs-passenger-class-panel .afs-stepper .afs-stepper-btn:hover {
+    background: var(--afs-primary-color);
+    color: white;
+    border-color: var(--afs-primary-color);
+}
+
+form.afs-flight-search-form .afs-passenger-class-panel .afs-stepper .afs-stepper-input {
+    width: 60px;
+    text-align: center;
+    border: 2px solid var(--afs-border-color);
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: 600;
+    background: white;
+    pointer-events: none;
+}
+
+/* Checkbox */
+form.afs-flight-search-form .afs-nonstop-preference .afs-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--afs-light-text-color);
+}
+
+form.afs-flight-search-form .afs-nonstop-preference input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--afs-primary-color);
+}
+
+/* Buttons */
+form.afs-flight-search-form .afs-button {
+    padding: 16px 32px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+form.afs-flight-search-form .afs-button.afs-button-primary {
+    background: linear-gradient(135deg, var(--afs-primary-color) 0%, var(--afs-secondary-color) 100%);
+    color: white;
+}
+
+form.afs-flight-search-form .afs-button.afs-button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+form.afs-flight-search-form .afs-button.afs-button-secondary {
+    background: var(--afs-border-color);
+    color: var(--afs-light-text-color);
+}
+
+form.afs-flight-search-form .afs-button.afs-button-secondary:hover {
+    background: #cbd5e0;
+}
+
+/* Loading States */
+.afs-button .afs-spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: afs-spin 1s linear infinite;
+    margin-left: 8px;
+}
+
+.afs-loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.afs-loading-overlay .afs-loading-indicator {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.afs-loading-overlay .afs-spinner-large {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--afs-border-color);
+    border-top: 3px solid var(--afs-primary-color);
+    border-radius: 50%;
+    animation: afs-spin 1s linear infinite;
+    margin: 0 auto 16px;
+}
+
+@keyframes afs-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* --- Results Area Styles --- */
+.afs-results-wrapper {
+    margin-top: 2rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.afs-flight-results-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Skyscanner Style Results Card */
+.afs-ticket {
+    border: 1px solid #e1e2e8;
+    border-radius: 6px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.afs-ticket:hover {
+    box-shadow: 0 4px 18px rgba(20, 22, 30, 0.12);
+}
+.afs-ticket__main {
+    padding: 1rem;
+    flex-grow: 1;
+}
+.afs-ticket__leg {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.afs-ticket__leg + .afs-ticket__leg {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #e1e2e8;
+}
+.afs-leg__logo img {
+    width: 90px;
+    height: auto;
+    display: block;
+    border-radius: 3px;
+    margin-right: 1rem;
+}
+.afs-leg__details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+.afs-leg__route-part { text-align: left; }
+.afs-leg__route-part:last-child { text-align: right; }
+.afs-leg__route-time {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #14161e;
+}
+.afs-leg__route-station {
+    font-size: 0.875rem;
+    color: #5f6678;
+}
+.afs-leg__stops {
+    text-align: center;
+    flex-shrink: 0;
+}
+.afs-leg__duration {
+    font-size: 0.875rem;
+    color: #5f6678;
+}
+.afs-leg__stops-line {
+    height: 1px;
+    background-color: #cdd0d7;
+    margin: 4px 0;
+    position: relative;
+}
+.afs-leg__stops-line::after {
+    content: '✈';
+    position: absolute;
+    right: -4px;
+    top: -8px;
+    font-size: 12px;
+    color: #5f6678;
+}
+.afs-leg__stops-label {
+    font-size: 0.875rem;
+    color: #00a698;
+    font-weight: 700;
+}
+.afs-ticket__stub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-top: 1px solid #e1e2e8;
+}
+.afs-stub__price .afs-price-amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #14161e;
+}
+.afs-stub__button {
+    background-color: #0062e3;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s;
+}
+.afs-stub__button:hover {
+    background-color: #0052bd;
+}
+
+/* Hotel Results Specific Styles */
+.ahs-hotel-details h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: var(--afs-text-color);
+}
+.ahs-hotel-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--afs-light-text-color);
+}
+.ahs-stars {
+    color: #f0ad4e; /* A gold/yellow color for stars */
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+.afs-ticket__stub small {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--afs-light-text-color);
+}
+
+/* Tooltip Styles */
+.afs-tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+.afs-tooltip-text {
+    visibility: hidden;
+    width: 220px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 10;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -110px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+.afs-tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+.afs-tooltip-container:hover .afs-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Error Messages */
+.afs-results-error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 1rem;
+    border: 1px solid #ef9a9a;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    body .afs-wrapper {
+        margin: 12px;
+        border-radius: 12px;
+    }
+    .afs-wrapper form.afs-flight-search-form {
+        padding: 24px 20px;
+    }
+    form.afs-flight-search-form .afs-form-header .afs-form-title {
+        font-size: 1.75rem;
+    }
+    form.afs-flight-search-form .afs-form-row.afs-grid-responsive {
+        grid-template-columns: 1fr;
+    }
+    form.afs-flight-search-form .afs-form-row {
+        margin-bottom: 20px;
+    }
+    form.afs-flight-search-form .afs-passenger-class-panel {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .afs-leg__details { flex-wrap: wrap; }
+    .afs-leg__stops { width: 100%; order: 3; margin-top: 0.5rem; }
+    .afs-ticket__stub { flex-direction: column; align-items: stretch; gap: 0.75rem; }
+    .afs-stub__price { text-align: center; }
+}
+
+@media (max-width: 480px) {
+    .afs-wrapper form.afs-flight-search-form {
+        padding: 20px 16px;
+    }
+    form.afs-flight-search-form .afs-form-header .afs-form-title {
+        font-size: 1.5rem;
+    }
+    form.afs-flight-search-form .afs-input,
+    form.afs-flight-search-form .afs-select {
+        padding: 14px;
+    }
+    form.afs-flight-search-form .afs-button {
+        padding: 14px 24px;
+    }
+}
+
+/* Large screen optimizations */
+@media (min-width: 1200px) {
+    body .afs-wrapper {
+        max-width: 1100px; /* Adjusted for a more compact large view */
+    }
+    .afs-wrapper form#afs-flight-search-form {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1.5fr 2fr 1fr; /* Adjust column ratios */
+        grid-template-rows: auto;
+        gap: 24px;
+        align-items: end;
+    }
+    form#afs-flight-search-form .afs-form-header {
+        display: visible; /* Hide header on wide-screen layout */
+    }
+    form#afs-flight-search-form .afs-form-row {
+        margin-bottom: 0;
+    }
+    form#afs-flight-search-form .afs-passengers-class-panel {
+        position: absolute;
+        z-index: 100;
+        width: 350px;
+        margin-top: 8px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+  /* --- Hotel Form Specific Layout --- */
+form#ahs-hotel-search-form .ahs-controls-grid {
+    display: grid;
+    gap: 16px;
+    /* Define columns for the horizontal layout */
+    grid-template-columns: 2.5fr 1fr 1fr 1fr auto;
+    align-items: end; /* Align items to the bottom of the grid row */
+}
+
+form#ahs-hotel-search-form .afs-form-actions {
+    margin-bottom: 0;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+    body .afs-wrapper {
+        margin: 12px;
+        border-radius: 12px;
+    }
+    .afs-wrapper form.afs-flight-search-form {
+        padding: 24px 20px;
+    }
+    .afs-flight-search-form .afs-form-header .afs-form-title {
+        font-size: 1.75rem;
+    }
+    /* Stack grids on mobile */
+    form#ahs-hotel-search-form .ahs-controls-grid {
+        grid-template-columns: 1fr;
+    }
+    .afs-flight-search-form .afs-form-group {
+        margin-bottom: 16px;
+    }
+}
+
+}
