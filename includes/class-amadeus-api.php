@@ -109,7 +109,9 @@ class Amadeus_API {
         );
 
         if ( is_wp_error( $response ) ) {
-            afs_debug_log( 'WP_Error during token request: ' . $response->get_error_message(), __CLASS__ . '::' . __FUNCTION__ );
+            $error_msg = 'WP_Error during token request: ' . $response->get_error_message();
+            afs_debug_log( $error_msg, __CLASS__ . '::' . __FUNCTION__ );
+            $this->track_api_error( $error_msg );
             return $response;
         }
 
@@ -137,6 +139,7 @@ class Amadeus_API {
                  $error_message .= ' ' . $data['title'];
             }
             afs_debug_log( 'Error retrieving token: ' . $error_message, __CLASS__ . '::' . __FUNCTION__ );
+            $this->track_api_error( $error_message );
             return new WP_Error( 'token_retrieval_failed', $error_message, $data );
         }
     }
@@ -152,6 +155,17 @@ class Amadeus_API {
      * @return array|WP_Error Decoded JSON response or WP_Error on failure.
      */
     private function make_request( $endpoint, $params = array(), $method = 'GET', $body_data = null ) {
+        // Generate a cache key for GET requests
+        $cache_key = '';
+        if ( 'GET' === strtoupper( $method ) ) {
+            $cache_key = 'afs_api_' . md5( $endpoint . serialize( $params ) );
+            $cached_response = get_transient( $cache_key );
+            if ( false !== $cached_response ) {
+                afs_debug_log( 'Serving cached response for: ' . $endpoint, __CLASS__ . '::' . __FUNCTION__ );
+                return $cached_response;
+            }
+        }
+
         $token = $this->get_access_token();
         if ( is_wp_error( $token ) ) {
             return $token; // Propagate error
@@ -188,7 +202,9 @@ class Amadeus_API {
         $response = wp_remote_request( $request_url, $args );
 
         if ( is_wp_error( $response ) ) {
-            afs_debug_log( 'WP_Error during API request: ' . $response->get_error_message(), __CLASS__ . '::' . __FUNCTION__ );
+            $error_msg = 'WP_Error during API request: ' . $response->get_error_message();
+            afs_debug_log( $error_msg, __CLASS__ . '::' . __FUNCTION__ );
+            $this->track_api_error( $error_msg );
             return $response;
         }
 
@@ -198,6 +214,14 @@ class Amadeus_API {
 
         afs_debug_log( 'API Response Code: ' . $response_code, __CLASS__ . '::' . __FUNCTION__ );
         afs_debug_log( 'API Response Body: ' . $response_body, __CLASS__ . '::' . __FUNCTION__ );
+
+        if ( 200 === $response_code ) {
+            // Cache successful GET responses for 1 hour
+            if ( ! empty( $cache_key ) ) {
+                set_transient( $cache_key, $data, HOUR_IN_SECONDS );
+            }
+            return $data;
+        }
 
         if ( $response_code >= 200 && $response_code < 300 ) {
             return $data;
@@ -224,6 +248,9 @@ class Amadeus_API {
                 __CLASS__ . '::' . __FUNCTION__
             );
             
+            // Track the error for alerting
+            $this->track_api_error( $error_message );
+
             return new WP_Error( 'api_request_failed', $error_message, array( 'status' => $response_code, 'body' => $data ) );
         }
     }
@@ -442,4 +469,46 @@ class Amadeus_API {
 	// END: HOTEL SEARCH METHODS
 	// ========================================================================
   
+	/**
+	 * Track API errors and send alert if threshold is exceeded.
+	 *
+	 * @param string $error_message The error message to log.
+	 */
+	private function track_api_error( $error_message ) {
+		$error_count_key = 'afs_api_error_count';
+		$alert_sent_key  = 'afs_api_alert_sent';
+		$threshold       = 10; // Number of errors
+		$time_window     = HOUR_IN_SECONDS; // 1 hour
+
+		// Increment error count
+		$current_count = get_transient( $error_count_key );
+		if ( false === $current_count ) {
+			set_transient( $error_count_key, 1, $time_window );
+			$current_count = 0;
+		} else {
+			// We extend the window on each error, effectively detecting sustained error rates
+			set_transient( $error_count_key, $current_count + 1, $time_window );
+		}
+
+		// Check threshold
+		if ( ( $current_count + 1 ) >= $threshold ) {
+			// Check if alert already sent recently
+			if ( false === get_transient( $alert_sent_key ) ) {
+				$admin_email = get_option( 'admin_email' );
+				$subject     = 'Amadeus API Error Alert';
+				$message     = sprintf(
+					"Warning: The Amadeus Flight Search plugin has encountered %d API errors recently.\n\nLast Error: %s\n\nPlease check your API credentials and quotas.",
+					$current_count + 1,
+					$error_message
+				);
+
+				wp_mail( $admin_email, $subject, $message );
+
+				// Prevent sending another alert for 1 hour
+				set_transient( $alert_sent_key, true, HOUR_IN_SECONDS );
+
+				afs_debug_log( 'API Error Alert sent to admin.', __CLASS__ . '::' . __FUNCTION__ );
+			}
+		}
+	}
 }

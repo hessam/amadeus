@@ -65,12 +65,43 @@ class Amadeus_AJAX {
     }
 
     /**
+     * Check rate limit for the current user IP.
+     *
+     * @param string $action The action being performed.
+     * @param int    $limit  Max requests allowed.
+     * @param int    $window Time window in seconds.
+     * @return bool True if request is allowed, false if rate limited.
+     */
+    private function check_rate_limit( $action, $limit = 10, $window = 60 ) {
+        $ip = $_SERVER['REMOTE_ADDR'];
+        $transient_key = 'afs_rate_limit_' . md5( $ip . $action );
+        $current_count = get_transient( $transient_key );
+
+        if ( false === $current_count ) {
+            set_transient( $transient_key, 1, $window );
+            return true;
+        }
+
+        if ( $current_count >= $limit ) {
+            return false;
+        }
+
+        set_transient( $transient_key, $current_count + 1, $window );
+        return true;
+    }
+
+    /**
      * Handle AJAX request for searching locations (airport/city autocomplete).
      *
      * @since 1.0.1
      */
     public function search_locations() {
         check_ajax_referer( self::NONCE_ACTION, 'nonce' );
+
+        if ( ! $this->check_rate_limit( 'search_locations', 20, 60 ) ) {
+            wp_send_json_error( array( 'message' => __( 'Too many requests. Please try again later.', 'amadeus-flight-search' ) ) );
+            return;
+        }
 
         $keyword = isset( $_POST['keyword'] ) ? sanitize_text_field( wp_unslash( $_POST['keyword'] ) ) : '';
 
@@ -155,6 +186,12 @@ class Amadeus_AJAX {
      */
     public function search_flights() {
         check_ajax_referer( self::NONCE_ACTION, 'nonce' );
+
+        if ( ! $this->check_rate_limit( 'search_flights', 5, 60 ) ) {
+            wp_send_json_error( array( 'message' => __( 'Too many search requests. Please wait a moment.', 'amadeus-flight-search' ) ) );
+            return;
+        }
+
         $params = isset( $_POST['params'] ) ? wp_unslash( $_POST['params'] ) : array();
 
         if ( empty( $params ) || !is_array($params) ) {

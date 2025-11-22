@@ -41,15 +41,24 @@
     }
 
     /**
+     * Clears error messages from a specified container.
+     * @param {jQuery} $container The jQuery object of the container to clear (optional, defaults to #afs-results-error-message).
+     */
+    function clearErrorMessage($container) {
+        const $errorTarget = $container && $container.length ? $container : $('#afs-results-error-message');
+        $errorTarget.empty().hide();
+    }
+
+    /**
      * Displays a zero state UI when no results are found.
      * @param {string} message The message to display.
      */
     function showZeroState(message) {
         const $container = $('#afs-flight-results-container').empty().show();
         const zeroStateHtml = `
-            <div class="afs-zero-state">
+            <div class="afs-zero-state" role="status" aria-live="polite">
                 <div class="afs-zero-state__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor" role="img" aria-label="No flights found icon">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                     </svg>
                 </div>
@@ -257,6 +266,31 @@
     }
 
     /**
+     * Displays skeleton loading cards.
+     */
+    function showSkeletonLoader() {
+        const $container = $('#afs-flight-results-container').empty().show();
+        let skeletonHtml = '';
+        for (let i = 0; i < 3; i++) {
+            skeletonHtml += `
+                <div class="afs-skeleton-card">
+                    <div class="afs-skeleton-header">
+                        <div class="afs-skeleton afs-skeleton-airline"></div>
+                        <div class="afs-skeleton afs-skeleton-price"></div>
+                    </div>
+                    <div class="afs-skeleton-route">
+                        <div class="afs-skeleton afs-skeleton-time"></div>
+                        <div class="afs-skeleton afs-skeleton-duration"></div>
+                        <div class="afs-skeleton afs-skeleton-time"></div>
+                    </div>
+                    <div class="afs-skeleton afs-skeleton-footer"></div>
+                </div>
+            `;
+        }
+        $container.html(skeletonHtml);
+    }
+
+    /**
      * Handles the flight search form submission.
      */
     function handleFlightSearchForm() {
@@ -272,7 +306,9 @@
             
             $submitBtn.prop('disabled', true);
             $spinner.show();
-            $overlay.show();
+            
+            // Show skeleton loader immediately
+            showSkeletonLoader();
 
             // Serialize form data into a neat object
             const params = {
@@ -292,7 +328,7 @@
                 showErrorMessage(amadeus_vars.text.error_generic || 'Please fill all required fields.', $('#afs-results-error-message'));
                 $submitBtn.prop('disabled', false);
                 $spinner.hide();
-                $overlay.hide();
+                $('#afs-flight-results-container').empty().hide(); // Clear skeleton
                 return;
             }
 
@@ -357,7 +393,7 @@
                 complete: function() {
                     $submitBtn.prop('disabled', false);
                     $spinner.hide();
-                    $overlay.hide();
+                    // $overlay.hide(); // Overlay removed in favor of skeleton loader
                     $('html, body').animate({
                         scrollTop: $("#afs-results-wrapper").offset().top - 100
                     }, 500);

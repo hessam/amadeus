@@ -338,6 +338,70 @@ form.afs-flight-search-form .afs-button.afs-button-secondary:hover {
     100% { transform: rotate(360deg); }
 }
 
+/* --- Skeleton Loading Animation --- */
+@keyframes afs-shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+}
+
+.afs-skeleton {
+    animation: afs-shimmer 2s infinite linear;
+    background: linear-gradient(to right, #f6f7f8 4%, #edeef1 25%, #f6f7f8 36%);
+    background-size: 1000px 100%;
+    border-radius: 4px;
+}
+
+.afs-skeleton-card {
+    background: #fff;
+    border: 1px solid var(--afs-border-color);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.afs-skeleton-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.afs-skeleton-airline {
+    width: 120px;
+    height: 24px;
+}
+
+.afs-skeleton-price {
+    width: 80px;
+    height: 32px;
+}
+
+.afs-skeleton-route {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.afs-skeleton-time {
+    width: 60px;
+    height: 20px;
+}
+
+.afs-skeleton-duration {
+    width: 100px;
+    height: 16px;
+}
+
+.afs-skeleton-footer {
+    margin-top: 12px;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+}
+
 /* --- Results Area Styles --- */
 .afs-results-wrapper {
     margin-top: 2rem;
@@ -696,4 +760,66 @@ form#ahs-hotel-search-form .afs-form-actions {
     }
 }
 
+/* --- Skeleton Loading Animation --- */
+@keyframes afs-shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+}
+
+.afs-skeleton {
+    animation: afs-shimmer 2s infinite linear;
+    background: linear-gradient(to right, #f6f7f8 4%, #edeef1 25%, #f6f7f8 36%);
+    background-size: 1000px 100%;
+    border-radius: 4px;
+}
+
+.afs-skeleton-card {
+    background: #fff;
+    border: 1px solid var(--afs-border-color);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.afs-skeleton-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.afs-skeleton-airline {
+    width: 120px;
+    height: 24px;
+}
+
+.afs-skeleton-price {
+    width: 80px;
+    height: 32px;
+}
+
+.afs-skeleton-route {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.afs-skeleton-time {
+    width: 60px;
+    height: 20px;
+}
+
+.afs-skeleton-duration {
+    width: 100px;
+    height: 16px;
+}
+
+.afs-skeleton-footer {
+    margin-top: 12px;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
 }

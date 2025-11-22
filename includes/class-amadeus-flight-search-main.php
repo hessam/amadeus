@@ -139,8 +139,8 @@ class Amadeus_Flight_Search_Main {
 	}
 
 	public function enqueue_styles() {
-		// This vendor file doesn't change, so a static version is fine.
-		wp_enqueue_style( 'jquery-ui-datepicker-style', AFS_PLUGIN_URL . 'public/css/vendor/jquery-ui.min.css', array(), '1.12.1' );
+		// Use WordPress's built-in jQuery UI styles instead of custom CSS to avoid missing image issues
+		wp_enqueue_style( 'jquery-ui-datepicker-style' );
 
 		// --- Cache-Busting for your main plugin CSS file ---
 		// Get the server path to the CSS file.

@@ -1,9 +1,13 @@
-# Amadeus Flight Search Pro Changelog
+## [3.2.5] - 2025-11-22
 
-All notable changes to this project will be documented in this file.
+### Fixed
+- **JavaScript Error**: `clearErrorMessage` function not defined - moved function to flight search script
+- **jQuery UI Images**: 404 errors for missing UI images - switched to WordPress built-in jQuery UI styles
+- **Script Dependencies**: Resolved undefined function errors in production environment
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+### Technical Improvements
+- **Code Reliability**: Fixed JavaScript function dependencies and asset loading issues
+- **Asset Management**: Improved CSS loading to prevent broken image references
 
 ## [3.2.4] - 2025-11-22
 

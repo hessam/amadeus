@@ -11,7 +11,7 @@
  * Plugin Name:       Amadeus Flight Search Pro
  * Plugin URI:        https://github.com/hessam/amadeus
  * Description:       Integrates Amadeus Self-Service Flight API for flight search and booking via Gravity Forms.
- * Version:           3.2.4
+ * Version:           3.2.5
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            Hessam
@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Define Constants
  */
-define( 'AFS_VERSION', '3.2.4' );
+define( 'AFS_VERSION', '3.2.5' );
 define( 'AFS_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'AFS_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'AFS_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
