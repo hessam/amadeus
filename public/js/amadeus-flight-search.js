@@ -4,7 +4,7 @@
  * Handles form interactions, AJAX calls for flight search,
  * results display, and pre-filling an existing Gravity Form on the booking page.
  *
- * @version 2.0.7
+ * @version 3.2.4
  */
 (function($) {
     'use strict';

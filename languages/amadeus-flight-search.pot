@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Amadeus Flight Search plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Amadeus Flight Search Pro 3.0.1\n"
+"Project-Id-Version: Amadeus Flight Search Pro 3.2.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/amadeus-flight-search\n"
 "POT-Creation-Date: 2025-07-02 10:30:00+03:00\n"
 "MIME-Version: 1.0\n"

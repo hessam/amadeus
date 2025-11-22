@@ -16,8 +16,17 @@ export let options = {
     },
 };
 
-// Base URL for the Amadeus API (use test environment for load testing)
-const BASE_URL = 'https://test.api.amadeus.com';
+// Environment variables
+const API_KEY = __ENV.AMADEUS_API_KEY || 'demo_key';
+const API_SECRET = __ENV.AMADEUS_API_SECRET || 'demo_secret';
+const ENVIRONMENT = __ENV.AMADEUS_ENVIRONMENT || 'test';
+
+// Base URL for the Amadeus API
+const BASE_URL = ENVIRONMENT === 'live' ? 'https://api.amadeus.com' : 'https://test.api.amadeus.com';
+
+// Global variable to cache token
+let cachedToken = null;
+let tokenExpiry = 0;
 
 // Sample search criteria for flight offers
 const searchCriteria = {
@@ -44,12 +53,50 @@ const searchCriteria = {
     }
 };
 
-export default function () {
-    // In a real scenario, you'd obtain a valid access token
-    // For this example, we'll simulate the request structure
-    // Note: This is a mock - actual token retrieval would be needed
+// Function to get access token
+function getAccessToken() {
+    const now = new Date().getTime() / 1000; // Current time in seconds
 
-    const token = getAccessToken(); // Implement token retrieval
+    // Return cached token if still valid (with 60 second buffer)
+    if (cachedToken && tokenExpiry > now + 60) {
+        return cachedToken;
+    }
+
+    const tokenUrl = `${BASE_URL}/v1/security/oauth2/token`;
+    const payload = {
+        grant_type: 'client_credentials',
+        client_id: API_KEY,
+        client_secret: API_SECRET,
+    };
+
+    const response = http.post(tokenUrl, payload, {
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+    });
+
+    check(response, {
+        'token request successful': (r) => r.status === 200,
+    });
+
+    if (response.status === 200) {
+        const data = JSON.parse(response.body);
+        cachedToken = data.access_token;
+        tokenExpiry = now + (data.expires_in || 1799); // Default 30 minutes
+        return cachedToken;
+    } else {
+        console.error('Failed to get access token:', response.body);
+        return null;
+    }
+}
+
+export default function () {
+    const token = getAccessToken();
+
+    if (!token) {
+        console.error('No access token available');
+        return;
+    }
 
     const params = {
         headers: {
@@ -69,18 +116,14 @@ export default function () {
         'status is 200': (r) => r.status === 200,
         'response time < 1000ms': (r) => r.timings.duration < 1000,
         'has flight offers': (r) => {
-            const data = JSON.parse(r.body);
-            return data && data.data && data.data.length > 0;
+            try {
+                const data = JSON.parse(r.body);
+                return data && data.data && data.data.length > 0;
+            } catch (e) {
+                return false;
+            }
         },
     });
 
     sleep(1); // Wait 1 second between iterations
-}
-
-// Mock function to get access token
-// In production, implement proper OAuth2 flow
-function getAccessToken() {
-    // This should be replaced with actual token retrieval logic
-    // For load testing, you might need to cache tokens or use a service account
-    return 'mock_access_token';
 }
