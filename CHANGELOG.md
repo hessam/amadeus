@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [3.2.4] - 2025-11-22
 
 ### Added
+- **API Error Alert System**: Automated email notifications to administrators when API errors exceed threshold (10 errors/hour)
+- **Response Caching**: 1-hour caching for GET requests to improve performance and reduce API calls
+- **Rate Limiting**: IP-based rate limiting (20/min for locations, 5/min for flights) to prevent abuse
+- **Skeleton Loading Screens**: Improved UX with animated skeleton placeholders during API calls
+- **Accessibility Enhancements**: ARIA labels, keyboard navigation, and screen reader support
 - **Zero States UI**: Enhanced user experience with helpful messaging when no flight results are found
 - **Load Testing**: Comprehensive k6 load testing script for performance validation
 - **API Testing**: curl-based test script for validating Amadeus API credentials and endpoints
@@ -29,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Testing**: Automated API validation and performance testing
 
 ### Fixed
+- **Critical Bug**: PHP Fatal Error due to undefined constants - reordered constant definitions
 - **Error Handling**: Improved error messages and user feedback
 - **API Reliability**: Better handling of API failures and timeouts
 
