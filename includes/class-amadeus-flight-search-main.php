@@ -139,8 +139,8 @@ class Amadeus_Flight_Search_Main {
 	}
 
 	public function enqueue_styles() {
-		// Use WordPress's built-in jQuery UI styles instead of custom CSS to avoid missing image issues
-		wp_enqueue_style( 'jquery-ui-datepicker-style' );
+		// Enqueue simplified jQuery UI CSS without background images to avoid 404 errors
+		wp_enqueue_style( 'jquery-ui-datepicker-style', AFS_PLUGIN_URL . 'public/css/vendor/jquery-ui-datepicker.css', array(), '1.0.0' );
 
 		// --- Cache-Busting for your main plugin CSS file ---
 		// Get the server path to the CSS file.
